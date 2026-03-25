@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm run generate",
+  "outputDirectory": ".output/public",
+  "framework": null
+}
