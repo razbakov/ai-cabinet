@@ -72,7 +72,7 @@ const progressPercentage = computed(() => (stepParam.value / totalSteps) * 100)
     <WizardStepSkills v-else-if="stepParam === 6" />
     <WizardStepGenerate v-else-if="stepParam === 7" />
 
-    <WizardWizardNav
+    <WizardNav
       :step="stepParam"
       :total-steps="totalSteps"
       :can-proceed="store.isStepValid(stepParam)"

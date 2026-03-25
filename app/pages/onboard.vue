@@ -8,5 +8,5 @@ useHead({
 </script>
 
 <template>
-  <WizardWizardShell />
+  <WizardShell />
 </template>
