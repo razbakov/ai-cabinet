@@ -26,7 +26,7 @@ Each agent has a personality type that influences how they communicate and appro
 
 ### 3. S3 Domain
 
-The S3 (Situation-Strategy-System) framework defines how each agent approaches problems. See the [S3 Framework guide](/guide/s3-framework) for details.
+Sociocracy 3.0 (S3) defines clear domains, drivers, and constraints for each agent. See the [S3 Governance guide](/guide/s3-governance) for details.
 
 ### 4. Skills
 

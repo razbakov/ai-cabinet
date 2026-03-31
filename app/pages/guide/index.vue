@@ -30,10 +30,10 @@ const sections = [
     to: '/guide/skills',
   },
   {
-    title: 'S3 Framework',
-    description: 'The Situation-Strategy-System framework that guides how agents think and operate.',
+    title: 'S3 Governance',
+    description: 'Sociocracy 3.0 patterns for agent domains, drivers, constraints, and decision authority.',
     icon: 'lucide:layers',
-    to: '/guide/s3-framework',
+    to: '/guide/s3-governance',
   },
   {
     title: 'Customization',

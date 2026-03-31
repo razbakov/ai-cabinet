@@ -99,7 +99,7 @@ const iconColorMap: Record<string, string> = {
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-bold shrink-0">2</span>
-            <span><strong class="text-foreground">Analyze</strong> — Assess the situation using the S3 framework (Situation, Strategy, System)</span>
+            <span><strong class="text-foreground">Analyze</strong> — Identify the driver, tension, and constraints using Sociocracy 3.0</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-bold shrink-0">3</span>
