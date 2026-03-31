@@ -1,64 +1,107 @@
 ---
 title: Getting Started
-description: Set up your AI Cabinet configuration and deploy your first agents.
+description: What you need, how the pieces fit together, and the fastest path to your first working agent.
 ---
 
 # Getting Started
 
-This guide walks you through setting up AI Cabinet in your project.
+Your AI agent team runs on [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — Anthropic's AI coding assistant that runs in your terminal. Each agent is a Claude Code session with specific instructions, a persona, and a set of skills.
+
+There is no server to deploy. No accounts to create. Everything lives as files in your project directory.
+
+## How It Works
+
+```
+your-project/
+  CLAUDE.md                  # Agent instructions, rules, persona
+  initiatives/
+    agent-team.md            # Team structure and domains
+  .claude/
+    skills/
+      daily-review/
+        SKILL.md             # Reusable workflow definition
+      sprint-planning/
+        SKILL.md
+```
+
+When you run `claude` in this directory, it reads `CLAUDE.md` and knows who the agents are, what they can do, and how they should behave. Skills are invoked with `/skill-name` commands. That's it.
 
 ## Prerequisites
 
-Before you begin, make sure you have:
+1. **Claude Code** — [install it](/guide/install-claude-code) via npm or Homebrew
+2. **A project directory** — any folder where you track your work
+3. **An Anthropic API key** — Claude Code will prompt you on first run
 
-- **Claude Code** installed and configured on your machine
-- A project directory where you want to deploy your agents
-- Basic familiarity with markdown files and project configuration
+Optional but recommended:
+- **MCP servers** for tools you use (Notion, GitHub, Google Calendar)
+- **Telegram bots** for mobile agent access
 
-## Step 1: Generate Your Configuration
+## Setup Path
 
-Visit the [onboarding wizard](/onboard) to create your configuration. You will:
+### 1. Run the Onboarding Wizard
 
-1. Define your mission and vision
-2. List your active projects
-3. Select your pain points
-4. Review agent recommendations
-5. Customize agent roles and names
-6. Pick skills for each agent
-7. Download a ZIP file with everything configured
+Go to the [onboarding wizard](/onboard). It asks about your mission, projects, and pain points, then recommends which agents and skills you need. At the end, it generates a ZIP with your configured files.
 
-## Step 2: Extract the Files
-
-Unzip the downloaded `ai-cabinet-config.zip` into your project root:
+### 2. Extract Into Your Project
 
 ```bash
-unzip ai-cabinet-config.zip -d /path/to/your/project
+unzip ai-cabinet-config.zip -d ~/my-project
 ```
 
-This creates:
-- `CLAUDE.md` — Your main project configuration
-- `initiatives/agent-team.md` — Agent team definitions
-- `skills/` — Individual skill configurations for each agent
+This creates your `CLAUDE.md`, `agent-team.md`, and `.claude/skills/` directory with skill definitions tailored to your selection.
 
-## Step 3: Start Using Your Agents
+### 3. Install Claude Code
 
-Open Claude Code in your project directory. Your agents are now available through the configuration in `CLAUDE.md`.
+```bash
+npm install -g @anthropic-ai/claude-code
+```
 
-Try these commands:
-- "Ask Maya to run the daily review"
-- "Have Viktor review the latest PR"
-- "Get Luna to draft a blog post about our launch"
+Run it once to authenticate:
 
-## Step 4: Iterate
+```bash
+cd ~/my-project
+claude
+```
 
-Your AI Cabinet configuration is a living document. As you work with your agents:
+### 4. Test Your First Agent
 
-- Adjust agent roles based on what works
-- Add or remove skills as your needs change
-- Update your mission and vision as your goals evolve
+Start with something concrete:
+
+```
+/daily-review
+```
+
+Or just talk to it naturally:
+
+```
+"What's on my calendar today? Process my inbox and propose a plan."
+```
+
+Claude reads the instructions from `CLAUDE.md`, assumes the agent persona, and executes the skill.
+
+### 5. Add Integrations (Optional)
+
+Agents become more powerful with tool access:
+
+- **Notion MCP** — for task boards, databases, and project management
+- **GitHub MCP** — for issues, PRs, and code review
+- **Google Calendar** — via [gog CLI](https://github.com/patsnapops/gog) for scheduling
+- **Telegram bots** — for messaging agents from your phone ([setup guide](/guide/telegram-bots))
+
+Configure these in your Claude Code settings (`~/.claude/settings.json`).
+
+## What the Wizard Generates
+
+| File | Purpose |
+|------|---------|
+| `CLAUDE.md` | Your mission, vision, rules, agent team reference, and project registry |
+| `initiatives/agent-team.md` | Full agent definitions with S3 domains, responsibilities, and constraints |
+| `.claude/skills/*/SKILL.md` | One skill file per selected workflow (daily review, sprint planning, etc.) |
+
+These are plain markdown files. You own them completely — edit, extend, or rewrite anything.
 
 ## Next Steps
 
-- [Understanding Agents](/guide/agents) — Learn how agents think and operate
-- [Skills System](/guide/skills) — Deep dive into the skills framework
-- [S3 Framework](/guide/s3-framework) — The decision-making framework behind your agents
+- [Installing Claude Code](/guide/install-claude-code) — detailed setup and key concepts
+- [Setting Up Your First Agent](/guide/first-agent) — start with Maya (Chief of Staff)
+- [Skills System](/guide/skills) — how skills work and how to create your own
