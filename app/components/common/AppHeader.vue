@@ -35,7 +35,7 @@ const mobileMenuOpen = ref(false)
           </NuxtLink>
           <CommonThemeToggle />
           <NuxtLink
-            to="/onboard"
+            to="/guide/getting-started"
             class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
           >
             <Icon name="lucide:rocket" class="w-4 h-4" />
@@ -76,7 +76,7 @@ const mobileMenuOpen = ref(false)
         <div class="flex items-center gap-3 px-3 py-2">
           <CommonThemeToggle />
           <NuxtLink
-            to="/onboard"
+            to="/guide/getting-started"
             class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground text-sm font-medium"
             @click="mobileMenuOpen = false"
           >
