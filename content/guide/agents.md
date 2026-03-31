@@ -49,7 +49,7 @@ When a task arrives:
 
 ## Customizing Agents
 
-You can customize any agent during the onboarding wizard:
+You can customize any agent by editing your configuration files:
 
 - **Rename them** — Give agents names that feel right for your workflow
 - **Adjust roles** — Modify their role description to match your needs

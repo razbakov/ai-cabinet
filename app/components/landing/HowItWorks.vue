@@ -2,21 +2,21 @@
 const steps = [
   {
     number: '01',
-    title: 'Define Your Mission',
-    description: 'Tell us about your goals, projects, and the challenges you face every day.',
-    icon: 'lucide:compass',
+    title: 'Read the Guide',
+    description: 'Follow the getting started guide to understand how agents, skills, and CLAUDE.md work together.',
+    icon: 'lucide:book-open',
   },
   {
     number: '02',
-    title: 'Choose Your Agents',
-    description: 'We recommend agents based on your pain points. Customize their roles and skills.',
+    title: 'Configure Your Team',
+    description: 'Set up CLAUDE.md with your mission, pick agents, and assign skills that match your workflow.',
     icon: 'lucide:users',
   },
   {
     number: '03',
-    title: 'Download & Deploy',
-    description: 'Get a ready-to-use configuration ZIP. Drop it into your project and start delegating.',
-    icon: 'lucide:download',
+    title: 'Run & Iterate',
+    description: 'Start Claude Code in your project directory and begin delegating. Customize as you go.',
+    icon: 'lucide:terminal',
   },
 ]
 </script>

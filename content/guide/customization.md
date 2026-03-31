@@ -9,7 +9,7 @@ AI Cabinet is designed to be extended. Here is how to customize every aspect of 
 
 ## Custom Agent Names and Roles
 
-The simplest customization is renaming agents and adjusting their roles. During onboarding, you can:
+The simplest customization is renaming agents and adjusting their roles. In your configuration files, you can:
 
 - Give each agent a name that resonates with you
 - Adjust their role description to match your specific domain

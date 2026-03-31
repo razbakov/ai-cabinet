@@ -118,11 +118,11 @@ const iconColorMap: Record<string, string> = {
 
       <div class="flex gap-4">
         <NuxtLink
-          to="/onboard"
+          to="/guide/getting-started"
           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
         >
           <Icon name="lucide:rocket" class="w-4 h-4" />
-          Add to Your Team
+          Get Started
         </NuxtLink>
         <NuxtLink
           to="/skills"

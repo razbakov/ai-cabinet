@@ -41,7 +41,7 @@ onUnmounted(() => {
           </p>
           <div class="mt-8 flex flex-wrap gap-4">
             <NuxtLink
-              to="/onboard"
+              to="/guide/getting-started"
               class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
             >
               <Icon name="lucide:rocket" class="w-5 h-5" />

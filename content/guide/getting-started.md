@@ -38,19 +38,18 @@ Optional but recommended:
 
 ## Setup Path
 
-### 1. Run the Onboarding Wizard
+### 1. Create Your Project Structure
 
-Go to the [onboarding wizard](/onboard). It asks about your mission, projects, and pain points, then recommends which agents and skills you need. At the end, it generates a ZIP with your configured files.
-
-### 2. Extract Into Your Project
+Create a project directory with the required files:
 
 ```bash
-unzip ai-cabinet-config.zip -d ~/my-project
+mkdir -p ~/my-project/.claude/skills
+mkdir -p ~/my-project/initiatives
 ```
 
-This creates your `CLAUDE.md`, `agent-team.md`, and `.claude/skills/` directory with skill definitions tailored to your selection.
+Then create your `CLAUDE.md` (agent instructions), `initiatives/agent-team.md` (team definitions), and skill files under `.claude/skills/`. See the [agents guide](/guide/agents) and [skills guide](/guide/skills) for templates.
 
-### 3. Install Claude Code
+### 2. Install Claude Code
 
 ```bash
 npm install -g @anthropic-ai/claude-code
@@ -90,7 +89,7 @@ Agents become more powerful with tool access:
 
 Configure these in your Claude Code settings (`~/.claude/settings.json`).
 
-## What the Wizard Generates
+## Key Files
 
 | File | Purpose |
 |------|---------|
