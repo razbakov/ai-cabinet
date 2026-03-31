@@ -3,8 +3,6 @@ title: Understanding Agents
 description: Learn how AI agents work, their roles, personalities, and decision-making framework.
 ---
 
-# Understanding Agents
-
 AI Cabinet agents are specialized AI personas, each with a defined domain of expertise, personality type, and set of responsibilities.
 
 ## What Makes an Agent?

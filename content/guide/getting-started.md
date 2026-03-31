@@ -3,8 +3,6 @@ title: Getting Started
 description: What you need, how the pieces fit together, and the fastest path to your first working agent.
 ---
 
-# Getting Started
-
 Your AI agent team runs on [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — Anthropic's AI coding assistant that runs in your terminal. Each agent is a Claude Code session with specific instructions, a persona, and a set of skills.
 
 There is no server to deploy. No accounts to create. Everything lives as files in your project directory.

@@ -3,8 +3,6 @@ title: Setup Guide
 description: Everything you need to go from zero to a fully operational AI agent team. Follow these guides in order for the smoothest experience.
 ---
 
-# Setup Guide
-
 This guide walks you through setting up your own AI Cabinet — a team of specialized AI agents that handle operations, engineering, content, strategy, coaching, and community work for your solo founder journey.
 
 ## What You'll Set Up

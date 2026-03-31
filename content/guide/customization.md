@@ -3,8 +3,6 @@ title: Customization
 description: Advanced customization — create custom agents, write your own skills, and extend the system.
 ---
 
-# Customization
-
 AI Cabinet is designed to be extended. Here is how to customize every aspect of your setup.
 
 ## Custom Agent Names and Roles

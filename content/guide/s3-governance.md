@@ -3,8 +3,6 @@ title: S3 Governance for Agent Teams
 description: Define clear ownership domains for each agent using Sociocracy 3.0 patterns. Prevents overlap and ensures accountability.
 ---
 
-# S3 Governance for Agent Teams
-
 Sociocracy 3.0 (S3) provides a practical framework for organizing your AI agent team. It solves the core problem of multi-agent systems: who does what, who decides what, and what happens when domains overlap.
 
 ## What is Sociocracy 3.0

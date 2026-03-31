@@ -3,8 +3,6 @@ title: Installing Claude Code
 description: Get Claude Code installed, authenticated, and understand the key concepts behind agent skills and configuration.
 ---
 
-# Installing Claude Code
-
 Claude Code is an AI coding assistant from Anthropic that runs in your terminal. It serves as the runtime for your AI agent team — each agent is a Claude Code session with specific instructions, skills, and personality.
 
 ## Installation

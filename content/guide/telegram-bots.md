@@ -3,8 +3,6 @@ title: Configuring Telegram Bots
 description: Give each agent its own Telegram bot so you can message them directly from your phone. Optional but recommended.
 ---
 
-# Configuring Telegram Bots (Optional)
-
 Telegram bots let you message each agent directly from your phone. Instead of opening a terminal, you send a message to `@YourMayaBot` and get a response. This makes the agents feel like real team members in your messaging app.
 
 ## Why Telegram

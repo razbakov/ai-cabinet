@@ -3,8 +3,6 @@ title: Skills System
 description: Discover how skills work — reusable workflows your agents can execute on demand.
 ---
 
-# Skills System
-
 Skills are the building blocks of what your agents can do. Each skill is a documented, repeatable workflow with clear triggers, inputs, processes, and outputs.
 
 ## Anatomy of a Skill

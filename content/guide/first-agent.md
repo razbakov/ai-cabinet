@@ -3,8 +3,6 @@ title: Setting Up Your First Agent
 description: Create Maya (Chief of Staff) as your foundation agent. She handles the daily rhythm that everything else builds on.
 ---
 
-# Setting Up Your First Agent
-
 Start with Maya — the Chief of Staff. She's the foundation agent because every other agent depends on operational rhythm. Without daily reviews, inbox processing, and task dispatch, nothing else works reliably.
 
 ## Why Maya First

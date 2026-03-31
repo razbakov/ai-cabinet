@@ -3,8 +3,6 @@ title: S3 Framework
 description: The Situation-Strategy-System framework that guides how agents think and operate.
 ---
 
-# S3 Framework
-
 S3 stands for **Situation, Strategy, System**. It is the decision-making framework that guides how your AI agents approach every task.
 
 ## The Three Layers

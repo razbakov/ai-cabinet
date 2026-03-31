@@ -3,8 +3,6 @@ title: Daily Reviews & Scheduled Tasks
 description: Set up the recurring rhythms that keep your projects on track — daily check-ins, weekly planning, and automated inbox processing.
 ---
 
-# Daily Reviews & Scheduled Tasks
-
 The daily review is the heartbeat of your agent system. Without it, tasks pile up, inbox overflows, and you lose track of what matters. This guide sets up the recurring rhythms that keep everything moving.
 
 ## The Daily Review Workflow
