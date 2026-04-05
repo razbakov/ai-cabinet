@@ -130,6 +130,7 @@ claude install-skill https://github.com/razbakov/skills/tree/main/skills/daily-r
 claude install-skill https://github.com/razbakov/skills/tree/main/skills/weekly-review
 claude install-skill https://github.com/razbakov/skills/tree/main/skills/process-inbox
 claude install-skill https://github.com/razbakov/skills/tree/main/skills/scrum
+claude install-skill https://github.com/razbakov/skills/tree/main/skills/become-claude-master
 ```
 
 Ask about optional integrations:
@@ -214,6 +215,7 @@ All skills come from https://github.com/razbakov/skills. Key skills used during 
 | 7 | `/weekly-review` | Saturday review + next week planning |
 | 7 | `/process-inbox` | GTD inbox processing |
 | 7 | `/scrum` | Agent status report |
+| 7 | `/become-claude-master` | Claude Code onboarding + skill assessment |
 | 8 | `/product-coach` | Set up individual projects (discovery → validate → build) |
 | 8 | `/org-coach` | Create organizations with S3 governance + agent teams |
 
