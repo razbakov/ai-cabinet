@@ -1,84 +1,40 @@
-<script setup lang="ts">
-const terminalLines = [
-  { agent: 'Maya', color: 'text-[var(--color-maya)]', text: 'Good morning. 3 items in inbox, 2 meetings today. Your top priority is the product launch.' },
-  { agent: 'Viktor', color: 'text-[var(--color-viktor)]', text: 'PR #47 passed all checks. Deploying to staging now.' },
-  { agent: 'Luna', color: 'text-[var(--color-luna)]', text: 'Blog post draft ready for review. SEO score: 92/100.' },
-  { agent: 'Marco', color: 'text-[var(--color-marco)]', text: 'Q2 OKR progress: 67%. Revenue target needs attention.' },
-]
-
-const visibleLines = ref(0)
-let interval: ReturnType<typeof setInterval>
-
-onMounted(() => {
-  interval = setInterval(() => {
-    if (visibleLines.value < terminalLines.length) {
-      visibleLines.value++
-    } else {
-      clearInterval(interval)
-    }
-  }, 800)
-})
-
-onUnmounted(() => {
-  clearInterval(interval)
-})
-</script>
-
 <template>
   <section class="relative overflow-hidden py-20 sm:py-32">
     <div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-            Your AI
-            <span class="text-primary">Dream Team</span>
-          </h1>
-          <p class="mt-6 text-lg text-muted-foreground max-w-xl">
-            Start with a coaching session, not a config file. Discover your purpose,
-            set your strategy, build your rhythm — then let 6 AI agents handle the rest.
-            Level 10 Life, GROW, OKRs, GTD, and S3 governance are all built in.
-          </p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <NuxtLink
-              to="/guide/getting-started"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
-            >
-              <Icon name="lucide:rocket" class="w-5 h-5" />
-              Meet the Team
-            </NuxtLink>
-            <NuxtLink
-              to="/guide"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:bg-muted transition-colors"
-            >
-              <Icon name="lucide:book-open" class="w-5 h-5" />
-              Read the Guide
-            </NuxtLink>
-          </div>
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
+          Your AI
+          <span class="text-primary">Dream Team</span>
+        </h1>
+        <p class="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+          Start with a coaching session, not a config file. Discover your purpose,
+          set your strategy, build your rhythm — then let 6 AI agents handle the rest.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4 justify-center">
+          <NuxtLink
+            to="/guide/getting-started"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
+          >
+            <Icon name="lucide:rocket" class="w-5 h-5" />
+            Meet the Team
+          </NuxtLink>
+          <NuxtLink
+            to="/guide"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:bg-muted transition-colors"
+          >
+            <Icon name="lucide:book-open" class="w-5 h-5" />
+            Read the Guide
+          </NuxtLink>
         </div>
+      </div>
 
-        <div class="bg-card border border-border rounded-xl overflow-hidden shadow-2xl">
-          <div class="flex items-center gap-2 px-4 py-3 border-b border-border bg-muted/50">
-            <div class="w-3 h-3 rounded-full bg-red-500/70" />
-            <div class="w-3 h-3 rounded-full bg-yellow-500/70" />
-            <div class="w-3 h-3 rounded-full bg-green-500/70" />
-            <span class="text-xs text-muted-foreground ml-2 font-mono">ikigai-team</span>
-          </div>
-          <div class="p-4 font-mono text-sm space-y-3 min-h-[200px]">
-            <div
-              v-for="(line, i) in terminalLines"
-              :key="i"
-              class="transition-all duration-500"
-              :class="i < visibleLines ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'"
-            >
-              <span :class="line.color" class="font-bold">{{ line.agent }}:</span>
-              <span class="text-foreground/80 ml-2">{{ line.text }}</span>
-            </div>
-            <div v-if="visibleLines >= terminalLines.length" class="flex items-center gap-1 text-muted-foreground">
-              <span class="animate-pulse">_</span>
-            </div>
-          </div>
-        </div>
+      <div class="max-w-4xl mx-auto">
+        <img
+          src="/hero-team.png"
+          alt="Meet the Ikigai Team — Maya, Viktor, Luna, Alex, Marco, Sage, and Kai"
+          class="rounded-xl shadow-2xl border border-border"
+        />
       </div>
     </div>
   </section>
