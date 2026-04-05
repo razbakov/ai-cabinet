@@ -140,6 +140,29 @@ Commit any remaining changes: `git add -A && git commit -m "Complete Ikigai Team
 
 **Finish:** "Your team is ready. Tomorrow morning, open this folder in Claude Desktop and say 'Good morning Maya.' She will run your first daily review. Welcome to your Ikigai Team."
 
+### Step 8: Projects & Organizations (ongoing)
+
+After the team is running, the user will want to set up their projects. There are two paths depending on scale:
+
+**For individual projects** — invoke `/product-coach` (from `razbakov/skills/product-coach`):
+- New project: Discovery → mission/vision → JTBD → user journey → validate → build
+- Existing project: Workspace Review → identify gaps → fill them
+- Creates README.md, strategy, story map, backlog in the project repo
+- Dispatches specialized agents (product-lead, designer, engineer) for detailed work
+
+**For organizations** (projects running on autopilot by multiple agents) — invoke `/org-coach` (from `razbakov/skills/org-coach`):
+- Creates S3 governance: primary driver → domains → roles → agent definitions → policies
+- Each org gets its own `.claude/agents/` with a Coordinator agent
+- Creates a routing agent in the user's ikigai org that `cd`s to the org and runs the coordinator
+- Examples: a SaaS product with its own dev + marketing agents, a community org with event + content agents
+
+**Migrating an existing project:**
+1. Open the project directory in Claude Desktop
+2. Say "Help me set up this project" → `/product-coach` reviews what exists and fills gaps
+3. If the project needs its own agent team: "Turn this into an organization" → `/org-coach` creates the S3 structure
+
+The user can set up projects and orgs at any pace. Each one is independent — the ikigai org just tracks them all in its project registry.
+
 ## Saving Progress
 
 When the user needs to stop between steps:
@@ -183,14 +206,18 @@ Lines marked `# CUSTOMIZE` need to be adapted to the user's agent names and org 
 
 All skills come from https://github.com/razbakov/skills. Key skills used during setup:
 
-| Step | Skill | Install |
+| Step | Skill | Purpose |
 |------|-------|---------|
-| 4-5 | `/personal-coach` | `claude install-skill https://github.com/razbakov/skills/tree/main/skills/personal-coach` |
-| 6 | `/product-coach` | `claude install-skill https://github.com/razbakov/skills/tree/main/skills/product-coach` |
-| 7 | `/daily-review` | `claude install-skill https://github.com/razbakov/skills/tree/main/skills/daily-review` |
-| 7 | `/weekly-review` | `claude install-skill https://github.com/razbakov/skills/tree/main/skills/weekly-review` |
-| 7 | `/process-inbox` | `claude install-skill https://github.com/razbakov/skills/tree/main/skills/process-inbox` |
-| 7 | `/scrum` | `claude install-skill https://github.com/razbakov/skills/tree/main/skills/scrum` |
+| 4-5 | `/personal-coach` | L10L assessment, GROW coaching, journaling |
+| 6 | `/product-coach` | Mission → hypothesis → JTBD → OKRs |
+| 7 | `/daily-review` | Morning inbox + calendar + plan |
+| 7 | `/weekly-review` | Saturday review + next week planning |
+| 7 | `/process-inbox` | GTD inbox processing |
+| 7 | `/scrum` | Agent status report |
+| 8 | `/product-coach` | Set up individual projects (discovery → validate → build) |
+| 8 | `/org-coach` | Create organizations with S3 governance + agent teams |
+
+All skills: `claude install-skill https://github.com/razbakov/skills/tree/main/skills/<name>`
 
 ## Important Notes
 
