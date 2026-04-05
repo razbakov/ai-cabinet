@@ -57,6 +57,13 @@
             Telegram
           </NuxtLink>
           <NuxtLink
+            to="/guide/projects"
+            class="block px-3 py-2 rounded-md text-sm hover:bg-muted transition-colors"
+            active-class="bg-muted text-primary font-medium"
+          >
+            Projects & Orgs
+          </NuxtLink>
+          <NuxtLink
             to="/guide/customization"
             class="block px-3 py-2 rounded-md text-sm hover:bg-muted transition-colors"
             active-class="bg-muted text-primary font-medium"

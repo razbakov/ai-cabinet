@@ -48,6 +48,12 @@ const sections = [
     to: '/guide/telegram-bots',
   },
   {
+    title: 'Projects & Orgs',
+    description: 'Set up projects or scale them into autonomous organizations.',
+    icon: 'lucide:folder-tree',
+    to: '/guide/projects',
+  },
+  {
     title: 'Make It Yours',
     description: 'Adapt the team to your needs.',
     icon: 'lucide:palette',

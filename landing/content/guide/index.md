@@ -13,4 +13,5 @@ Get started in minutes, then explore what your team can do.
 4. [Use Cases](/guide/skills) — real examples of what to ask
 5. [Governance](/guide/s3-governance) — how decisions work
 6. [Telegram](/guide/telegram-bots) — message agents from your phone
-7. [Make It Yours](/guide/customization) — adapt the team to your needs
+7. [Projects & Orgs](/guide/projects) — set up projects or scale them into organizations
+8. [Make It Yours](/guide/customization) — adapt the team to your needs
