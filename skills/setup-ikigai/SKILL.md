@@ -29,13 +29,49 @@ Each session saves progress. The user does not have to finish in one sitting.
 **Goal:** Get to know the user. Set up the org structure. Start the coaching journey.
 
 **Step 1 — Quick setup questions:**
-Ask these to create the workspace:
-1. "What is your name?"
-2. "Where should your organization live?" (default: `~/Orgs/ikigai`)
+1. "What is your name?" — Store as `owner_name`, extract first name as `owner_first_name`
+2. "Where should your organization live?" — Default: `~/Orgs/ikigai`. Store as `org_path`
+3. "Name your agents or use defaults?" — Defaults: Maya, Viktor, Luna, Marco, Sage, Kai
 
-Generate the directory scaffold and agent files using templates from the ikigai-team repo. This creates the workspace so Sage has a place to save progress.
+**Step 2 — Generate the workspace:**
 
-**Step 2 — Hand off to Sage for coaching:**
+Create directory scaffold:
+```
+{{org_path}}/
+  .claude/agents/          # Agent definitions
+  .claude/agent-memory/    # Persistent memory per agent (one dir each)
+  ops/sessions/            # Daily review logs
+  ops/inbox/               # Processed inbox items
+  ops/reviews/             # Weekly reviews
+  contacts/                # CRM
+  strategy/decisions/      # Decision log
+  strategy/experiments/    # Hypothesis tracking
+  assessments/             # Level 10 Life snapshots
+  output/                  # Generated artifacts
+```
+
+Create each directory with `mkdir -p`. Initialize git in `{{org_path}}`.
+
+Generate all 6 agent files from templates. For each agent:
+1. Read the template from `templates/agents/<role>.md.hbs` in the ikigai-team repo
+2. Replace `{{owner_name}}`, `{{owner_first_name}}`, `{{agent_*_name}}` with collected values
+3. Build the `## Team` section listing all OTHER agents (not self)
+4. Write to `{{org_path}}/.claude/agents/{{agent_name_lower}}.md`
+
+| Agent | Template | File |
+|-------|----------|------|
+| {{agent_ops_name}} | `chief-of-staff.md.hbs` | `.claude/agents/{{agent_ops_name_lower}}.md` |
+| {{agent_engineering_name}} | `cto.md.hbs` | `.claude/agents/{{agent_engineering_name_lower}}.md` |
+| {{agent_content_name}} | `content-lead.md.hbs` | `.claude/agents/{{agent_content_name_lower}}.md` |
+| {{agent_strategy_name}} | `strategy-lead.md.hbs` | `.claude/agents/{{agent_strategy_name_lower}}.md` |
+| {{agent_coach_name}} | `personal-coach.md.hbs` | `.claude/agents/{{agent_coach_name_lower}}.md` |
+| {{agent_community_name}} | `community-lead.md.hbs` | `.claude/agents/{{agent_community_name_lower}}.md` |
+
+Generate `CLAUDE.md` from `templates/CLAUDE.md.hbs` with owner name and agent table filled in. Leave project registry and OKRs empty — they get filled in Sessions 3 and 4.
+
+Generate blank `profile.md` and `now.md` from `templates/profile/`.
+
+**Step 3 — Hand off to Sage for coaching:**
 
 Sage runs a Level 10 Life assessment:
 - Score 10 life areas (1-10): health, relationships, family, career, finances, personal growth, fun/recreation, physical environment, community, purpose
