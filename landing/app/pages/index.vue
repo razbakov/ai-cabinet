@@ -10,12 +10,12 @@ useHead({
 <template>
   <div>
     <LandingHeroSection />
+    <LandingBanners />
     <LandingBuiltInSystem />
     <LandingMethodologies />
     <LandingAgentGrid />
     <LandingHowItWorks />
     <LandingFounderStory />
-    <LandingBanners />
     <LandingCtaSection />
   </div>
 </template>
