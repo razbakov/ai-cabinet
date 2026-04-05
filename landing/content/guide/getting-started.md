@@ -20,25 +20,6 @@ claude "/setup-ikigai"
 
 The wizard asks ~10 questions: your name, projects, OKRs, and optional integrations (Telegram, Notion). Then it generates your full team.
 
-## What Gets Generated
-
-```
-~/Orgs/your-org/
-  CLAUDE.md                    # Rules, agent table, decision matrix
-  .claude/agents/              # 6 agent definitions (source of truth)
-    maya.md                    # Chief of Staff
-    viktor.md                 # CTO
-    luna.md                   # Content & Growth
-    marco.md                  # Strategy & Business
-    sage.md                   # Personal Coach
-    kai.md                    # Community & Partnerships
-  ops/sessions/                # Daily review logs
-  ops/inbox/                   # Processed inbox items
-  contacts/                    # CRM
-  profile.md                   # Your personality and coaching prefs
-  now.md                       # Current focus and health plan
-```
-
 ## Start Using It
 
 ```bash
