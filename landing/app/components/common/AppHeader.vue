@@ -7,7 +7,13 @@ const mobileMenuOpen = ref(false)
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <NuxtLink to="/" class="flex items-center gap-2">
-          <Icon name="lucide:compass" class="w-7 h-7 text-primary" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-7 h-7">
+            <circle cx="13.5" cy="13.5" r="5" fill="none" stroke="currentColor" stroke-width="1.2" class="text-primary/50" />
+            <circle cx="18.5" cy="13.5" r="5" fill="none" stroke="currentColor" stroke-width="1.2" class="text-primary/50" />
+            <circle cx="13.5" cy="18.5" r="5" fill="none" stroke="currentColor" stroke-width="1.2" class="text-primary/50" />
+            <circle cx="18.5" cy="18.5" r="5" fill="none" stroke="currentColor" stroke-width="1.2" class="text-primary/50" />
+            <circle cx="16" cy="16" r="2" fill="currentColor" class="text-primary" />
+          </svg>
           <span class="text-lg font-bold">Ikigai Team</span>
         </NuxtLink>
 

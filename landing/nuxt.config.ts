@@ -5,6 +5,22 @@ export default defineNuxtConfig({
 
   ssr: false,
 
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      posthogPublicKey: '',
+      posthogHost: 'https://eu.i.posthog.com',
+    },
+  },
+
   modules: [
     '@pinia/nuxt',
     'shadcn-nuxt',
