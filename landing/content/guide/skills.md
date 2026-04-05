@@ -1,35 +1,92 @@
 ---
-title: Skills
-description: Installable workflows that give each agent real capabilities.
+title: Use Cases
+description: Real examples of what to ask your team.
 ---
 
-Skills are reusable workflows your agents invoke with `/skill-name`. They are installed from the [skills repo](https://github.com/razbakov/skills).
+## Operations (Maya)
 
-## How It Works
+> "Run my daily review"
 
-```bash
-claude install-skill https://github.com/razbakov/skills/tree/main/skills/daily-review
-```
+Maya processes your inbox, checks calendar, syncs projects, and proposes today's plan.
 
-Then in any conversation:
-```
-/daily-review
-```
+> "What did the team accomplish this week?"
 
-Maya runs it. The skill orchestrates inbox processing, calendar review, and plan creation automatically.
+Maya runs a scrum report across all agents and projects.
 
-## Skills by Agent
+> "Process my inbox"
 
-**Maya** — daily-review, weekly-review, process-inbox, scrum, suggest-tasks, dispatch-approved
+Maya classifies everything via GTD — actions, references, and trash — then routes to the right agent.
 
-**Viktor** — github-issue, sprint-planning, run-sprint, pr-review-responder, estimation, dependency-vuln-report
+## Engineering (Viktor)
 
-**Luna** — content-seo-agent, viral-threads, social-post, youtube-metadata-updater, brand-poster, image-from-gemini
+> "Fix the login bug users reported"
 
-**Marco** — product-coach, user-story, sales-bizdev-agent, freelance-job-hunt, storyteller-tactics, portfolio-hiring-analysis
+Viktor investigates, finds the root cause, writes a fix, and opens a PR.
 
-**Sage** — personal-coach, year-review
+> "Implement issue #47"
 
-**Kai** — agent-browser (contact research)
+Viktor reads the spec, creates a branch, writes code with tests, and submits for review.
 
-Browse all available skills on the [Skills page](/skills).
+> "Plan the next sprint"
+
+Viktor reviews the backlog, estimates stories, and creates a sprint plan.
+
+## Content (Luna)
+
+> "I just gave a talk about building in public. Turn it into a thread."
+
+Luna extracts the key insights and formats them for Twitter/X.
+
+> "Our blog has no traffic. Help."
+
+Luna runs an SEO audit, finds indexing issues, and drafts optimized content.
+
+> "Create a poster for our launch event"
+
+Luna designs a visual using your brand guidelines.
+
+## Strategy (Marco)
+
+> "Should I raise the price from 1 euro to 5?"
+
+Marco frames it as a hypothesis, suggests how to test it, and challenges your assumptions.
+
+> "I have 15 projects. What should I focus on?"
+
+Marco reviews your OKRs, scores each project on impact vs effort, and recommends what to pause.
+
+> "Write a proposal for a potential client"
+
+Marco prepares pitch materials with your value proposition and pricing.
+
+## Coaching (Sage)
+
+> "I do not feel motivated today"
+
+Sage asks what changed, what would make today meaningful, and whether you are aligned with your purpose.
+
+> "Let us do a life assessment"
+
+Sage runs a Level 10 Life scoring — 10 areas, 1-10 each — and helps you pick focus areas.
+
+> "I have been skipping my morning routine"
+
+Sage gently explores why, without judgment, and helps you find what would work better.
+
+## Community (Kai)
+
+> "I met Alex at the salsa festival. Here is his Instagram."
+
+Kai creates a contact card, researches him online, enriches the profile, and sets a follow-up.
+
+> "Meneate festival is next week. Help me prepare."
+
+Kai reviews who is going, suggests people to connect with, and prepares contact templates.
+
+> "When did I last reach out to Kirill?"
+
+Kai checks the CRM and suggests it is time for a touchpoint.
+
+---
+
+Browse all installable skills on the [Skills page](/skills).

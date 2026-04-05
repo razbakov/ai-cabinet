@@ -1,34 +1,30 @@
 ---
-title: Telegram Bots
-description: Message your agents from your phone. Optional but powerful.
+title: Telegram
+description: Message your agents from your phone.
 ---
 
-Each agent can have a dedicated Telegram bot. You message them directly — they respond with full tool access.
+Each agent can have a dedicated Telegram bot. Message them on the go �� they respond with full capabilities.
 
-## Why
+## What It Looks Like
 
-- Message Maya from your phone while walking
-- Send Viktor a bug report from a screenshot
-- Drop Kai a voice note about someone you just met
-- Get Sage to check in on you during the evening
+> **You to Maya (on Telegram):** "Quick status update?"
+>
+> **Maya:** "Viktor shipped PR #47. Luna's blog post draft is waiting for your review. Kai processed 3 new contacts from yesterday's event."
+
+> **You to Sage (on Telegram):** "Rough day. Can we talk?"
+>
+> **Sage:** "I am here. What happened?"
+
+> **You to Kai (on Telegram):** *(sends Instagram screenshot)*  "Met her at the festival"
+>
+> **Kai:** "I will create a contact card and research her online. What did you talk about?"
 
 ## Setup
 
-The setup wizard generates Telegram infrastructure if you say yes during `/setup-ikigai`.
+During team setup, say yes to Telegram integration. The wizard generates everything.
 
-Or set up manually:
-1. Create bots via [@BotFather](https://t.me/BotFather) on Telegram — one per agent
-2. Save tokens to `~/.config/telegram/.env`
-3. Start the bot runner: `.bin/telegram-bots.sh`
-
-Detailed setup: see [docs/telegram-setup.md](https://github.com/razbakov/ikigai-team/blob/main/docs/telegram-setup.md) in the repo.
-
-## How It Works
-
-You send a message → bot reacts with 👀 → agent processes → agent replies via the bot.
-
-Sessions auto-restart every 4 hours. If an agent is unresponsive for 2 minutes, it auto-recovers.
+Or set up later — create bots via [@BotFather](https://t.me/BotFather) on Telegram. Details in the [setup guide](https://github.com/razbakov/ikigai-team/blob/main/docs/telegram-setup.md).
 
 ## Security
 
-Bots only respond to your Telegram user ID. Everyone else gets "This bot is private."
+Bots only respond to your Telegram ID. Everyone else gets "This bot is private."

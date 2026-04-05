@@ -1,46 +1,36 @@
 ---
-title: Customization
-description: Rename agents, add projects, adjust boundaries — make it yours.
+title: Make It Yours
+description: Adapt the team to your needs — just tell them what to change.
 ---
 
-Everything is plain markdown files. Edit anything.
+Everything is customizable. Just talk to your agents about it.
 
-## Rename Agents
+## Rename an Agent
 
-During setup, choose your own names. Or edit `.claude/agents/<name>.md` later — change the `name` field and rename the file. Update references in other agent files.
+> "Maya, I want to rename Viktor to Atlas. Update all references."
 
-## Add Projects
+## Add a Project
 
-Add to the project registry in `CLAUDE.md`:
+> "Maya, add my new project 'my-saas' at ~/Projects/my-saas to the registry."
 
-```markdown
-| my-new-project | `~/Projects/my-new-project` |
-```
+## Change OKRs
 
-For projects with their own org, create a project agent — a thin router that hands off to the project's coordinator.
+> "Marco, my Q3 objectives changed. O1 is now 'Launch the mobile app'. Update everyone's OKRs to align."
 
-## Adjust OKRs
+## Adjust an Agent's Focus
 
-Edit the `## Current OKRs` section in each agent's file. Agents check their KRs before taking action.
-
-## Change Boundaries
-
-Edit the `## Boundaries` section. Keep it symmetric — if agent A says "hand off to B", make sure B's domain covers it.
+> "Viktor, your top priority is now the mobile app, not the web dashboard. Update your project list."
 
 ## Add Skills
 
-Install from the [skills repo](https://github.com/razbakov/skills):
+> "Maya, install the content-seo-agent skill for Luna."
 
-```bash
-claude install-skill https://github.com/razbakov/skills/tree/main/skills/<skill-name>
-```
+## Add Telegram
 
-Then add it to the agent's `## Available Skills` section.
+> "Maya, I want to set up Telegram bots for the team."
 
 ## Add Integrations
 
-Configure MCP servers in Claude Desktop settings for:
-- **Notion** — task boards, databases
-- **GitHub** — issues, PRs, code review
-- **Google Calendar** — scheduling
-- **Figma** — design implementation
+> "Maya, set up Notion integration for task management."
+
+The team handles the configuration for you. You describe what you want, they make it happen.

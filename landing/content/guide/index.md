@@ -1,16 +1,16 @@
 ---
 title: Guide
-description: Everything you need to get your AI dream team running.
+description: How to use your AI dream team — real conversations, real use cases.
 ---
 
-Get started in 2 minutes, then explore each topic as needed.
+Get started in minutes, then explore what your team can do.
 
 ## Guides
 
-1. [Getting Started](/guide/getting-started) — install, setup, go
-2. [The Team](/guide/agents) — meet Maya, Viktor, Luna, Marco, Sage, and Kai
-3. [Skills](/guide/skills) — installable workflows for each agent
-4. [Daily Reviews](/guide/daily-reviews) — the daily rhythm that keeps everything on track
-5. [S3 Governance](/guide/s3-governance) — how decisions and domains work
-6. [Telegram Bots](/guide/telegram-bots) — message agents from your phone
-7. [Customization](/guide/customization) — rename agents, add projects, adjust boundaries
+1. [Getting Started](/guide/getting-started) — set up your team
+2. [The Team](/guide/agents) — who does what
+3. [Daily Life](/guide/daily-reviews) — your morning routine with the team
+4. [Use Cases](/guide/skills) — real examples of what to ask
+5. [Governance](/guide/s3-governance) — how decisions work
+6. [Telegram](/guide/telegram-bots) — message agents from your phone
+7. [Make It Yours](/guide/customization) — adapt the team to your needs

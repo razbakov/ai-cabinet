@@ -1,33 +1,46 @@
 ---
-title: Daily Reviews
-description: The daily rhythm that keeps everything on track.
+title: Daily Life
+description: What a typical day looks like with your team.
 ---
 
-Maya runs a daily review every morning. It is the heartbeat of the system.
+## Morning
 
-## What Happens
+> "Good morning Maya"
 
-1. **Inbox processing** — Telegram messages, Notion cards, browser bookmarks classified via GTD
-2. **Calendar review** — what is on today, what got missed
-3. **Project sync** — pull latest status from all repos
-4. **Plan proposal** — Maya suggests today's priorities with reasoning
-5. **Calendar sync** — plan gets pushed to Google Calendar
-6. **Sage check-in** — how are you feeling? burnout signals?
+Maya runs your daily review:
+1. Processes your inbox (Telegram, Notion, bookmarks) via GTD
+2. Checks your calendar
+3. Syncs project status
+4. Proposes today's priorities with reasoning
+5. Sage checks in — how are you feeling?
 
-## Weekly Review (Saturdays)
+Your plan lands in Google Calendar. You just follow it.
 
-Maya runs a deeper review:
-- OKR progress check (Marco contributes)
-- Contacts follow-up queue (Kai contributes)
-- Content pipeline status (Luna contributes)
-- Team retrospective — what is working, what needs to change
+## During the Day
 
-## How to Run
+You drop messages to the right agent as things come up:
 
-Just ask Maya:
+> "Viktor, the checkout page is broken on mobile"
 
-```
-Run my daily review
-```
+> "Luna, I just recorded a voice note about our launch story. Turn it into content."
 
-Or use the skill directly: `/daily-review`
+> "Kai, I just met someone interesting at lunch. Her name is Maria, she does UX."
+
+Each agent handles their domain. You stay focused on what only you can do.
+
+## Evening
+
+> "Maya, scrum report"
+
+Maya checks what every agent accomplished, what is in progress, and flags anything stuck.
+
+## Saturday
+
+> "Maya, weekly review"
+
+A deeper session:
+- OKR progress check (Marco weighs in)
+- Contact follow-up queue (Kai reviews)
+- Content pipeline (Luna reports)
+- Team retro — what is working, what is not
+- Next week priorities

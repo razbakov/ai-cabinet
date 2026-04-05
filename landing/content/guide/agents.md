@@ -1,54 +1,60 @@
 ---
 title: The Team
-description: Meet the 6 AI agents — their roles, personalities, and how they work together.
+description: Meet the 6 AI agents and see how they work together.
 ---
 
-## The Dream Team
+## Meet the Dream Team
 
-Every agent has a distinct personality, domain, and set of boundaries. They know each other and hand off tasks they cannot handle.
-
-| Agent | Role | Personality | Domain |
-|-------|------|------------|--------|
-| **Maya** | Chief of Staff | ISTJ — reliable, systematic | Dispatch, daily reviews, inbox, calendar |
-| **Viktor** | CTO | INTJ — direct, quality-focused | Code, architecture, testing, deployments |
-| **Luna** | Content & Growth | ENFP — creative, trend-aware | Blog, SEO, social media, visual assets |
-| **Marco** | Strategy & Business | ENTJ — analytical, decisive | OKRs, portfolio, pricing, biz dev |
-| **Sage** | Personal Coach | INFJ — warm, Socratic | Coaching, health, journaling, burnout detection |
-| **Kai** | Community & Partnerships | ESFJ — social, connector | Contacts, events, follow-ups, CRM |
+| Agent | Role | Talk to them when... |
+|-------|------|---------------------|
+| **Maya** | Chief of Staff | You need a daily review, want to process inbox, or need a task dispatched |
+| **Viktor** | CTO | You have a bug, need a feature built, or want a code review |
+| **Luna** | Content & Growth | You have an idea for a blog post, need SEO help, or want social media content |
+| **Marco** | Strategy & Business | You are deciding what to focus on, need OKR check, or want to validate an idea |
+| **Sage** | Personal Coach | You are feeling stuck, want a check-in, or need a journaling session |
+| **Kai** | Community | You met someone new, have an event coming up, or need to follow up with contacts |
 
 ## How They Work Together
 
-You talk to Maya. She classifies your message and routes it:
+You talk to Maya. She figures out who should handle it.
 
-- Code task → Viktor
-- Content idea → Luna
-- Strategy question → Marco
-- Personal reflection → Sage
-- New contact → Kai
+> **You:** "I had a great conversation with Sarah at the conference. She runs a design agency in Berlin."
+>
+> **Maya:** "Contact processing — routing to Kai."
+>
+> **Kai:** "I will create a contact card for Sarah, research her agency online, and add a follow-up reminder. Do you remember her last name or Instagram?"
 
-Maya never does work herself — she dispatches and tracks.
+## Example Conversations
+
+**Morning routine:**
+> "Good morning Maya, what is on my plate today?"
+
+Maya pulls your inbox, calendar, and project status, then proposes a plan.
+
+**Ship a feature:**
+> "Viktor, implement the payment flow from issue #23"
+
+Viktor reads the issue, creates a branch, writes code, runs tests, opens a PR.
+
+**Content from an idea:**
+> "Luna, I just had a thought about why solo founders need AI teams. Turn it into a blog post."
+
+Luna shapes it into a hook, writes a draft, and optimizes for SEO.
+
+**Challenge your priorities:**
+> "Marco, I want to start a new project. Should I?"
+
+Marco asks about your current OKRs, challenges whether it moves the needle, and gives a data-driven recommendation.
+
+**Check in on yourself:**
+> "Sage, I have been working 12-hour days. Something feels off."
+
+Sage asks what is driving that, whether it aligns with your values, and helps you see the pattern.
 
 ## Boundaries
 
-Every agent knows what they do NOT do:
+Every agent knows what they will NOT do — and tells you who to ask instead:
 
-- Viktor does not decide product direction (that is Marco + you)
-- Luna does not write application code (that is Viktor)
-- Marco recommends but you decide
-- Sage never prescribes — only suggests and questions
-- Kai never represents you to external parties
-
-## Decision Authority
-
-| Decision | Who Decides | Who Advises |
-|----------|-------------|-------------|
-| Product direction | You | Marco |
-| Architecture | Viktor | You |
-| Content voice | You | Luna |
-| Sprint priorities | You | Marco, Viktor |
-| Partnership terms | You | Marco, Kai |
-| Publishing content | You (approval) | Luna |
-
-## Customization
-
-Agent names are defaults — you can rename them during setup. Personalities, boundaries, and skills are all editable in `.claude/agents/<name>.md`.
+> **You to Viktor:** "Can you write a blog post about our new feature?"
+>
+> **Viktor:** "That is Luna's domain. I can give her the technical details. Want me to hand it off?"
