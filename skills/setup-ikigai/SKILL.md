@@ -28,37 +28,30 @@ Ask the user these questions one at a time. Accept defaults in parentheses if th
 
 5. **"What is your mission? (one sentence)"** — Seeds the README. Store as `mission`.
 
-6. **"Agent preset?"**
-   - **full** (6 agents): ops, engineering, content, strategy, coach, community
-   - **minimal** (3 agents): ops, engineering, content
-   - **solo** (2 agents): ops, engineering
+6. **"Name your agents or use defaults?"**
    
-   Default: `full`. Store as `preset`.
+   The dream team defaults:
+   | Role | Name | Personality |
+   |------|------|------------|
+   | Chief of Staff | **Maya** | ISTJ — reliable, systematic |
+   | CTO | **Viktor** | INTJ — strategic, efficient |
+   | Content & Growth | **Luna** | ENFP — imaginative, enthusiastic |
+   | Strategy & Business | **Marco** | ENTJ — analytical, decisive |
+   | Personal Coach | **Sage** | INFJ — insightful, empathetic |
+   | Community & Partnerships | **Kai** | ESFJ — warm, connector-minded |
+   
+   If the user wants custom names, ask for each role. Store each as `agent_<role>_name` and `agent_<role>_name_lower` (lowercase).
 
-7. **"Name your agents or use defaults?"**
-   
-   Defaults by role (the ikigai-framework cast):
-   | Role | Default Name |
-   |------|-------------|
-   | ops | Maya |
-   | engineering | Viktor |
-   | content | Luna |
-   | strategy | Marco |
-   | coach | Sage |
-   | community | Kai |
-   
-   If the user wants custom names, ask for each role included in their preset. Store each as `agent_<role>_name` and `agent_<role>_name_lower` (lowercase).
-
-8. **"Do you want Telegram bot integration? (y/n)"** — Default: `n`. Store as `use_telegram`.
+7. **"Do you want Telegram bot integration? (y/n)"** — Default: `n`. Store as `use_telegram`.
    
    If yes, ask:
    - "What is your Telegram user ID?" — Store as `telegram_user_id`
    - For each agent: "Bot username for <name>?" — e.g., `@maya_raz_bot`. Store as `agent_<role>_bot_username`.
    - Token env var names are auto-generated: `<NAME>_BOT_TOKEN`
 
-9. **"Do you want Notion integration? (y/n)"** — Default: `n`. Store as `use_notion`.
+8. **"Do you want Notion integration? (y/n)"** — Default: `n`. Store as `use_notion`.
 
-10. **"List your active projects (or skip to add later)."**
+9. **"List your active projects (or skip to add later)."**
     
     Format: `name, path` per line. Example:
     ```
@@ -67,7 +60,7 @@ Ask the user these questions one at a time. Accept defaults in parentheses if th
     ```
     Store as `projects` array of `{name, path}`.
 
-11. **"What are your top 2 OKRs this quarter? (or skip)"**
+10. **"What are your top 2 OKRs this quarter? (or skip)"**
     
     Example:
     ```
@@ -113,7 +106,7 @@ Write the result to `{{org_path}}/CLAUDE.md`.
 
 #### Step 3: Generate agent files
 
-For each agent role included in the preset:
+For each of the 6 agent roles:
 
 1. Read the corresponding template from `templates/agents/<role>.md.hbs`
 2. Substitute all variables
@@ -146,12 +139,12 @@ Write `{{org_path}}/README.md` with mission, agent table, and structure overview
 ```bash
 cd {{org_path}}
 git add -A
-git commit -m "Initialize ikigai framework with {{preset}} agent preset"
+git commit -m "Initialize ikigai framework with the dream team"
 ```
 
 ### Phase 3: Skill Recommendations
 
-Print recommended skills to install based on the preset. See `docs/skills-catalog.md` for the full list per agent role.
+Print recommended skills to install for each agent. See `docs/skills-catalog.md` for the full list per role.
 
 ### Phase 4: Verification
 
