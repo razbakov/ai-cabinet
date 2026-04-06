@@ -1,17 +1,18 @@
 ---
 name: setup-ikigai
 description: >
-  Set up an Ikigai Team — 6 AI agents (Maya, Viktor, Luna, Marco, Sage, Kai) with Level 10 Life,
-  GROW coaching, OKRs, GTD, and S3 governance built in. Use this skill when the user wants to
-  create their AI team, says "set up my ikigai", "create my team", mentions ikigai-team,
-  or provides the GitHub repo URL https://github.com/razbakov/ikigai-team. Also trigger when
-  the user wants a personal operating system, AI executive team, or says they need help
-  managing multiple projects as a solo founder.
+  Set up an Ikigai Team — 6 AI agents (Maya, Viktor, Luna, Marco, Sage, Kai) with OKRs,
+  GTD, and S3 governance built in. Supports both personal (Level 10 Life, GROW coaching)
+  and work contexts (performance reviews, career OKRs, NDA-aware). Use this skill when
+  the user wants to create their AI team, says "set up my ikigai", "create my team",
+  mentions ikigai-team, or provides the GitHub repo URL https://github.com/razbakov/ikigai-team.
+  Also trigger for: personal operating system, AI executive team, work assistant, career goals,
+  professional development, work team, managing multiple projects.
 ---
 
 # Setup Ikigai Team
 
-A guided, multi-session journey. Starts with personal coaching (Sage), builds strategy (Marco), then sets up daily operations (Maya). The user does not need to finish in one sitting.
+A guided, multi-session journey. Adapts to context: personal life coaching (Sage → Marco → Maya) or work/career focus (Marco → Maya). The user does not need to finish in one sitting.
 
 All skills referenced below come from https://github.com/razbakov/skills — install them as needed.
 
@@ -34,7 +35,7 @@ If fresh: proceed to Step 2.
 
 ### Step 2: Quick Setup (5 minutes)
 
-Ask these three questions:
+Ask these questions:
 
 1. **"What is your name?"**
    Store full name and first name.
@@ -44,6 +45,22 @@ Ask these three questions:
 
 3. **"Want to name your agents, or use the defaults? The dream team is: Maya (ops), Viktor (engineering), Luna (content), Marco (strategy), Sage (coaching), Kai (community)."**
    Most users will keep defaults. If they want custom names, ask for each.
+
+4. **"Is this for work, personal life, or both?"**
+   This determines the setup flow:
+   - **Work** → skip personal coaching (Steps 4-5), go to Step 4-work for work context discovery, then OKRs
+   - **Personal** → full coaching flow (Steps 4-5 with L10L and GROW), then OKRs
+   - **Hybrid** → coaching first, then work context layered on top
+
+   Store as `context_mode` (work | personal | hybrid).
+
+5. **If work or hybrid → "What company, role, and department?"**
+   Also ask: "What tools do you use?" — specifically:
+   - Calendar: Outlook / Google Calendar
+   - Project management: Jira / Linear / Notion / other
+   - Communication: Slack / Teams / other
+
+   Save tools to CLAUDE.md Configuration section.
 
 ### Step 3: Generate the Workspace
 
@@ -57,17 +74,60 @@ For each of the 6 agents:
 Also create:
 - `.claude/agent-memory/<name>/` directory for each agent
 - `.claude/agent-memory/setup/` directory for progress tracking
-- `CLAUDE.md` with agent table, decision matrix, and rule sections (project registry and OKRs empty for now)
-- `profile.md` with blank sections: Personality & Values, Motivation Patterns, Communication Style, Coaching Preferences
-- `now.md` with blank sections: Current Focus, OKRs This Quarter, Morning Routine, Health Plan
+- `CLAUDE.md` with agent table, decision matrix, rule sections, and tool configuration (project registry and OKRs empty for now)
+- `profile.md` — use the **work template** or **personal template** from `references/agent-structures.md` based on `context_mode`
+- `now.md` — use the **work template** or **personal template** from `references/agent-structures.md` based on `context_mode`
 - `README.md` with the org name and agent table
 - All ops/, contacts/, strategy/, assessments/, output/ directories
 
+**If context_mode = work:** Also add a `### Confidentiality (NDA)` section to CLAUDE.md with these default rules:
+- NEVER store client names, project codenames, or client-specific data in this repo
+- NEVER store company internal financials, strategy docs, or proprietary processes
+- Use generic references when discussing client work (e.g., "the e-commerce project" not the client name)
+- All agents must respect this — if in doubt, ask the owner before saving
+
 Initialize git and commit: `git add -A && git commit -m "Initialize Ikigai Team"`
 
-Then say: **"Your workspace is ready. Now let us get to know you. I am going to switch into Sage mode — your personal coach. Ready?"**
+**Transition based on context_mode:**
+- **Personal:** "Your workspace is ready. Now let us get to know you. I am going to switch into Sage mode — your personal coach. Ready?" → proceed to Step 4
+- **Work:** "Your workspace is ready. Let me switch into Marco mode to understand your work context and define your goals." → proceed to Step 4-work
+- **Hybrid:** "Your workspace is ready. Let us start with getting to know you personally, then we will layer in your work context." → proceed to Step 4
+
+### Step 4-work: Work Context Discovery (as Marco)
+
+**This step applies when context_mode = work or hybrid (after Steps 4-5).**
+
+Switch to Marco's persona. Gather work context through documents and conversation.
+
+**a) Performance review (most valuable input):**
+Ask: "Do you have a recent performance review? Paste the relevant sections — strengths, growth areas, manager feedback, scores. I will extract what we need for your OKRs."
+
+If provided:
+- Extract: strengths, growth areas, manager's concrete next steps, scores
+- Save scores table and strengths to profile.md
+- Save full review summary to `assessments/YYYY-HN-performance-review.md`
+- Use growth areas + manager feedback as OKR seeds for Step 6
+
+**b) Employment contract (optional):**
+If the user offers their contract, see "Corporate Document Handling" section below for extraction rules.
+
+**c) NDA/confidentiality check:**
+Ask: "Are you bound by an NDA at work?"
+If yes and the NDA section was not already added in Step 3, add Confidentiality rules to CLAUDE.md:
+- NEVER store client names, project codenames, or client-specific data
+- Use generic references (e.g., "the e-commerce project")
+- All agents must respect this
+
+**d) Corporate tools:**
+If not already captured in Step 2, ask about calendar (Outlook/Google), project management, and communication tools. Save to CLAUDE.md Configuration.
+
+**Transition:** Proceed directly to Step 6 (OKRs).
 
 ### Step 4: Coaching — Know Yourself (as Sage)
+
+**This step applies when context_mode = personal or hybrid. For work-only setups, skip to Step 4-work.**
+
+If the user says "not relevant", "skip", or indicates this is work-only — respect immediately. Do not suggest L10L for work-only contexts. Save progress and proceed to Step 4-work or Step 6.
 
 Adopt Sage's persona and invoke `/personal-coach` (from `razbakov/skills/personal-coach`).
 
@@ -81,6 +141,8 @@ If stopping: save progress (see "Saving Progress" below). If continuing: proceed
 
 ### Step 5: Coaching — Find Direction (as Sage)
 
+**This step applies when context_mode = personal or hybrid. For work-only setups, this step was skipped.**
+
 Still as Sage. Invoke `/personal-coach` again — this time the conversation naturally shifts to "open" or "build jam" mode since the assessment is done.
 
 Guide toward the GROW framework using the L10L results:
@@ -91,20 +153,43 @@ Guide toward the GROW framework using the L10L results:
 
 The personal-coach skill handles the conversational style and file saving. You provide the GROW structure as the agenda.
 
-**Transition:** "You have a clear direction now. Ready to turn this into measurable goals? I will bring in Marco."
+**Transition:**
+- **Personal:** "You have a clear direction now. Ready to turn this into measurable goals? I will bring in Marco." → proceed to Step 6.
+- **Hybrid:** "You have a clear direction now. Before we set goals, let me gather your work context too." → proceed to Step 4-work, then Step 6.
 
-If stopping: save progress. If continuing: proceed to Step 6.
+If stopping: save progress. If continuing: proceed as above.
 
 ### Step 6: Strategy — OKRs (as Marco)
 
-Switch to Marco's persona. Invoke `/product-coach` (from `razbakov/skills/product-coach`).
+Switch to Marco's persona.
 
-This skill guides from mission/vision through hypothesis validation to JTBD analysis. Use it to:
+**For personal context (from Step 5):**
+Invoke `/product-coach` (from `razbakov/skills/product-coach`). This skill guides from mission/vision through hypothesis validation to JTBD analysis. Use it to:
 - Turn the Way Forward from Step 5 into 2-3 quarterly OKRs
 - Challenge assumptions ("Does this actually move the needle?")
 - Map OKRs to projects
 
+**For work context (from Step 4-work):**
+Use performance review feedback to generate OKRs:
+- Manager's concrete next steps → OKR objectives
+- Growth areas → key results
+- Strengths → leverage points (what to double down on)
+- Challenge: "Does this actually move the needle for your career/role?"
+
+Format: 2-3 OKRs with 3 KRs each. Present for approval before saving.
+
+**For hybrid:** Combine personal direction from GROW with work context from the performance review. OKRs should bridge both — e.g., a personal goal of "become a better communicator" maps to a work KR of "lead 1 client demo independently."
+
 Ask: "What projects are you working on?" Collect name + path pairs for the project registry.
+
+**After OKR approval, distribute to agents:**
+- Each agent gets OKRs relevant to their domain
+- Maya: meta-tracking across all OKRs (flag when no weekly progress)
+- Viktor: engineering/building KRs
+- Luna: communication/content KRs
+- Marco: strategy layer ownership
+- Sage: professional growth enablement (work) or personal development (personal)
+- Kai: relationship/event KRs
 
 Save:
 - OKRs to each agent's `## Current OKRs` section
@@ -123,19 +208,21 @@ Switch to Maya's persona. Explain the daily rhythm:
 - **Evening:** `/scrum` — what each agent accomplished
 - **Saturday:** `/weekly-review` — OKR check, retro, next week planning
 
-These skills (`daily-review`, `weekly-review`, `process-inbox`, `scrum`) are from `razbakov/skills`. Install them:
+Install skills from `razbakov/skills`:
 
-```
-claude install-skill https://github.com/razbakov/skills/tree/main/skills/daily-review
-claude install-skill https://github.com/razbakov/skills/tree/main/skills/weekly-review
-claude install-skill https://github.com/razbakov/skills/tree/main/skills/process-inbox
-claude install-skill https://github.com/razbakov/skills/tree/main/skills/scrum
-claude install-skill https://github.com/razbakov/skills/tree/main/skills/become-claude-master
+```bash
+git clone https://github.com/razbakov/skills /tmp/razbakov-skills
+for skill in daily-review weekly-review process-inbox scrum become-claude-master personal-coach product-coach org-coach; do
+  cp -r /tmp/razbakov-skills/skills/$skill ~/.claude/skills/$skill
+done
 ```
 
 Ask about optional integrations:
 - "Do you use Notion for task management?" (optional)
 - "Want Telegram bots to message agents from your phone?" (optional — if yes, generate scripts from `references/scripts/`)
+
+Ask: "Want to do a quick Claude Code training session? It takes 15 minutes and will help you get the most out of your team."
+If yes → invoke `/become-claude-master`
 
 Commit any remaining changes: `git add -A && git commit -m "Complete Ikigai Team setup"`
 
@@ -174,16 +261,17 @@ Write `.claude/agent-memory/setup/progress.md`:
 ---
 last_session: YYYY-MM-DD
 resume_at: step_N
+context_mode: work | personal | hybrid
 owner_name: Their Name
 org_path: ~/Orgs/ikigai
 ---
 
 ## Completed
 - Step 3: Workspace generated
-- Step 4: L10L assessment (score: X/100)
+- Step 4-work: Performance review processed, NDA rules added
 
 ## Next
-- Step 5: GROW framework — find direction
+- Step 6: Define OKRs from review feedback
 
 ## Notes
 Any context needed to resume smoothly.
@@ -191,10 +279,32 @@ Any context needed to resume smoothly.
 
 Tell the user: "We saved your progress. When you are ready, open this folder in Claude Desktop and say 'Let us continue setting up my Ikigai Team.'"
 
+## Corporate Document Handling
+
+When users share employment contracts, performance reviews, or other corporate documents:
+
+### Performance Reviews (high value)
+- Extract: scores, strengths, growth areas, manager feedback, concrete next steps
+- Save summary to `assessments/YYYY-HN-performance-review.md`
+- Save strengths + growth areas to `profile.md`
+- Use manager's concrete steps as OKR seeds
+- Do NOT save raw review text verbatim — summarize
+
+### Employment Contracts (medium value)
+- Extract ONLY: role title, responsibilities list, tech stack, department, working arrangements (hours, home office)
+- Save to `profile.md` under Scope of Duties
+- NEVER save: salary, bonus amounts, addresses, legal clauses, signatures, termination terms
+- Explain to the user what you are keeping and what you are discarding
+
+### NDAs (rules only)
+- Do NOT save the NDA text itself
+- Extract the obligations and add confidentiality rules to CLAUDE.md
+- Default rules: no client names, no project codenames, no internal financials, generic references only
+
 ## Bundled References
 
 When generating files, read these references for the exact structures:
-- `references/agent-structures.md` — agent definitions, CLAUDE.md format, directory scaffold
+- `references/agent-structures.md` — agent definitions, CLAUDE.md format, directory scaffold, work/personal templates
 - `references/scripts/telegram-bots.py` — multi-agent Telegram bot runner (tmux, self-healing, watchdog). Adapt AGENTS dict and paths.
 - `references/scripts/telegram-send.py` — send messages via agent bots. Adapt AGENT_TOKEN_MAP.
 - `references/scripts/telegram-bots.sh` — start/stop shell wrapper.
@@ -209,8 +319,10 @@ All skills come from https://github.com/razbakov/skills. Key skills used during 
 
 | Step | Skill | Purpose |
 |------|-------|---------|
-| 4-5 | `/personal-coach` | L10L assessment, GROW coaching, journaling |
-| 6 | `/product-coach` | Mission → hypothesis → JTBD → OKRs |
+| 4-5 | `/personal-coach` | L10L assessment, GROW coaching, journaling (personal/hybrid only) |
+| 4-work | — | Work context discovery from performance reviews and contracts |
+| 6 | `/product-coach` | Mission → hypothesis → JTBD → OKRs (personal context) |
+| 6 | — | OKRs from performance review feedback (work context) |
 | 7 | `/daily-review` | Morning inbox + calendar + plan |
 | 7 | `/weekly-review` | Saturday review + next week planning |
 | 7 | `/process-inbox` | GTD inbox processing |
@@ -219,14 +331,19 @@ All skills come from https://github.com/razbakov/skills. Key skills used during 
 | 8 | `/product-coach` | Set up individual projects (discovery → validate → build) |
 | 8 | `/org-coach` | Create organizations with S3 governance + agent teams |
 
-All skills: `claude install-skill https://github.com/razbakov/skills/tree/main/skills/<name>`
+Install skills by cloning and copying:
+```bash
+git clone https://github.com/razbakov/skills /tmp/razbakov-skills
+cp -r /tmp/razbakov-skills/skills/<name> ~/.claude/skills/<name>
+```
 
 ## Important Notes
 
 - **You are one agent playing roles.** Do not try to spawn sub-agents or use `claude --agent`. Adopt each persona's communication style when it is their turn.
-- **Delegate to skills.** Do not reimplement what skills already do. Invoke `/year-review`, `/personal-coach`, `/product-coach` — they handle the methodology.
-- **The coaching matters.** Do not rush through Steps 4-5 to get to the "real" setup. The coaching IS the setup. The user's scores and mission drive everything that follows.
+- **Delegate to skills.** Do not reimplement what skills already do. Invoke `/personal-coach`, `/product-coach` — they handle the methodology.
+- **Context matters.** For personal setups, the coaching (Steps 4-5) IS the setup — do not rush it. The user's L10L scores and mission drive everything. For work setups, the performance review and manager feedback drive everything. Match the flow to the user's context.
+- **Handle corporate documents carefully.** When users share contracts or reviews, extract only role-relevant information. Never save salary, addresses, or legal terms. Always explain what you are keeping and what you are discarding.
 - **Respect the user's time.** Always ask before continuing to the next step. Some users will do everything in one session. Others will spread it across a week. Both are fine.
-- **Save everything.** Every assessment, every coaching session, every OKR gets saved to a file. The user's reflections are theirs to keep.
+- **Save everything.** Every assessment, every coaching session, every OKR gets saved to a file. The user's reflections are theirs to keep (respecting NDA boundaries for work contexts).
 - **No jargon dumps.** When introducing a methodology (L10L, GROW, OKRs, GTD), explain it naturally in conversation. The skills handle the process — you provide the context and transitions.
 - **Steps are optional.** The user can skip any step or come back to it later. Mention what the next step is and why it helps, but if they say "not now" or "skip", respect that immediately. Save progress and move on. Never repeat a suggestion they already declined.

@@ -150,13 +150,115 @@ Skills: agent-browser, dogfood
 ## CLAUDE.md Structure
 
 The generated CLAUDE.md should contain:
-1. Configuration section (org path, media path, issue tracker)
+1. Configuration section (org path, owner, company/role if work context, tools — calendar/PM/chat)
 2. Project path registry (table, initially empty)
 3. Agent team section (table of agents with roles and file paths)
 4. Triage flow description
 5. Decision authority matrix
-6. Rules sections (agent operations, daily review, contacts, general)
+6. Rules sections (agent operations, daily review, contacts, confidentiality if work context, general)
 7. Processing instructions (contacts format, session types)
+
+**For work context:** Add a `### Confidentiality (NDA)` rule section with:
+- NEVER store client names, project codenames, or client-specific data in this repo
+- NEVER store company internal financials, strategy docs, or proprietary processes
+- Use generic references when discussing client work
+- All agents must respect this — if in doubt, ask the owner before saving
+
+## Profile Templates
+
+### Personal Template (context_mode = personal)
+
+```markdown
+# Profile — {{name}}
+
+## Personality & Values
+<!-- To be explored during coaching with Sage -->
+
+## Motivation Patterns
+<!-- What drives you, what drains you -->
+
+## Communication Style
+<!-- How you prefer to give and receive information -->
+
+## Coaching Preferences
+<!-- What works for you in coaching conversations -->
+```
+
+### Work Template (context_mode = work)
+
+```markdown
+# Profile — {{name}}
+
+## Professional
+- **Role:** {{role}}
+- **Department:** {{department}}
+- **Company:** {{company}}
+- **Location:** {{location}}
+- **Start Date:** {{start_date}}
+
+## Scope of Duties
+<!-- From contract or job description -->
+
+## Tech Stack
+<!-- Technologies, frameworks, tools used at work -->
+
+## Work Arrangements
+<!-- Hours, home office policy, etc. -->
+
+## Work Context
+This Ikigai Team is scoped to the {{company}} work context — career growth, engineering goals, team contributions, and professional development.
+
+## Work Strengths
+<!-- From performance review or self-assessment -->
+
+## Growth Areas
+<!-- From performance review or self-identified -->
+
+## Communication Style
+<!-- How you prefer to work with colleagues -->
+```
+
+## Now Templates
+
+### Personal Template (context_mode = personal)
+
+```markdown
+# Now — {{name}}
+
+Last updated: {{date}}
+
+## Current Focus
+<!-- To be defined during coaching and strategy sessions -->
+
+## OKRs This Quarter
+<!-- To be defined with Marco -->
+
+## Morning Routine
+<!-- To be explored with Sage -->
+
+## Health Plan
+<!-- To be explored with Sage -->
+```
+
+### Work Template (context_mode = work)
+
+```markdown
+# Now — {{name}}
+
+Last updated: {{date}}
+
+## Current Focus
+<!-- To be defined during strategy session -->
+
+## OKRs This Quarter
+<!-- To be defined with Marco -->
+
+## Work Rhythm
+- **Morning:** Open org folder in Claude Desktop → "Good morning Maya"
+- **During the day:** Dispatch tasks to agents as needed
+- **Evening:** Scrum check — what got done today
+- **Saturday:** Weekly review — OKR progress, retro, next week plan
+```
 
 ## Directory Scaffold
 
