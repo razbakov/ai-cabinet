@@ -13,8 +13,7 @@
   "hero": {
     "title": "Il tuo team IA",
     "titleHighlight": "dei sogni",
-    "subtitle": "Apri Claude Code sul desktop, incolla questo messaggio e inizia. Nessun wizard di configurazione, nessuna deviazione nella documentazione, nessuna decisione extra.",
-    "step1": "1. Apri Claude Code sul desktop",
+    "subtitle": "Apri il tuo harness preferito, incolla un prompt e inizia. Nessun wizard di configurazione, nessuna deviazione nella documentazione, nessuna decisione extra.",
     "step2": "2. Incolla questo prompt",
     "copied": "Copiato",
     "copyPrompt": "Copia il prompt",

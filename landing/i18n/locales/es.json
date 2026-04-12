@@ -13,8 +13,7 @@
   "hero": {
     "title": "Tu equipo de IA",
     "titleHighlight": "de ensueno",
-    "subtitle": "Abre Claude Code en el escritorio, pega este mensaje y comienza. Sin asistente de configuracion, sin desvios por documentacion, sin decisiones extra.",
-    "step1": "1. Abre Claude Code en el escritorio",
+    "subtitle": "Abre tu harness preferido, pega un prompt y comienza. Sin asistente de configuracion, sin desvios por documentacion, sin decisiones extra.",
     "step2": "2. Pega este prompt",
     "copied": "Copiado",
     "copyPrompt": "Copiar prompt",

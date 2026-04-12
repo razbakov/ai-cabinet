@@ -13,8 +13,7 @@
   "hero": {
     "title": "Your AI",
     "titleHighlight": "Dream Team",
-    "subtitle": "Open Claude Code on Desktop, paste this message, and start. No setup wizard, no docs detour, no extra decisions.",
-    "step1": "1. Open Claude Code on Desktop",
+    "subtitle": "Open your preferred harness, paste one prompt, and start. No setup wizard, no docs detour, no extra decisions.",
     "step2": "2. Paste this prompt",
     "copied": "Copied",
     "copyPrompt": "Copy prompt",

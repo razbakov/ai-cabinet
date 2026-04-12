@@ -13,8 +13,7 @@
   "hero": {
     "title": "Dein KI-",
     "titleHighlight": "Traumteam",
-    "subtitle": "Offne Claude Code auf dem Desktop, fuge diese Nachricht ein und starte. Kein Setup-Assistent, kein Umweg uber Docs, keine zusatzlichen Entscheidungen.",
-    "step1": "1. Offne Claude Code auf dem Desktop",
+    "subtitle": "Offne deinen bevorzugten Harness, fuge einen Prompt ein und starte. Kein Setup-Assistent, kein Umweg uber Docs, keine zusatzlichen Entscheidungen.",
     "step2": "2. Fuge diesen Prompt ein",
     "copied": "Kopiert",
     "copyPrompt": "Prompt kopieren",
