@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { AgentDefinition } from '~/types/agent'
 
-const { t, tm } = useI18n()
+const { t, tm, rt } = useI18n()
 
 const props = defineProps<{
   agent: AgentDefinition
@@ -27,7 +27,7 @@ const ringColorMap: Record<string, string> = {
 
 const responsibilities = computed(() => {
   const raw = tm(`agents.${props.agent.id}.responsibilities`)
-  return Array.isArray(raw) ? raw.map(String) : props.agent.responsibilities
+  return Array.isArray(raw) ? raw.map(r => rt(r)) : props.agent.responsibilities
 })
 </script>
 
