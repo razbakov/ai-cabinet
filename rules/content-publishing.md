@@ -8,6 +8,24 @@ Generic publishing rules. Per-domain rules (which languages to translate to, whi
 - **YouTube thumbnails** must be Gemini-generated, not HTML-rendered. HTML + headless Chrome thumbnails look generic and hurt click-through. The paired blog post's hero image is usually the right source if it exists; otherwise generate a new one with Gemini.
 - Resize thumbnails to 1280px wide with `sips --resampleWidth 1280` before uploading.
 
+### Fact-check market claims before any external-facing deliverable
+
+AI-generated business copy looks authoritative but is routinely wrong on specifics. Before any external-facing deliverable ships (pitch site, sales deck, landing page, sponsor pitch, investor memo, press release, partnership proposal), verify:
+
+- **Specific numbers** — practitioner counts, market sizes, customer counts, competitor counts. Source it (industry report, government statistic, primary survey), use a defensible range, or omit the number. Round-number claims like "5,000" or "10K" without a citation are the most common failure.
+- **"We're the first / no one does X / the only Y" superlatives** — search before claiming. There is almost always a small competitor that's been operating quietly for a decade; the false superlative destroys credibility the first time the reader recognises it.
+- **Named competitors and peer references** — verify each named business is still operating, at the address, doing the thing. Referencing a venue that closed years ago, or a product that pivoted, telegraphs "didn't do the research."
+- **Historical claims about other businesses** — opening dates, founder names, prices, when they pivoted. Web search before commit.
+
+When the data isn't verifiable, write the copy without the specific:
+
+- ❌ "5,000 active practitioners in Munich"
+- ✅ "a thousand-plus active practitioners across Munich's school network"
+- ❌ "the only authentic Cuban bar in Munich"
+- ✅ "Munich has a few Cuban-themed cocktail bars, but no Cuban cultural home"
+
+Don't add a disclaimer ("approximate", "as of writing"). Don't ship the specific claim if you can't source it. The reader meeting the document for the first time will not give the benefit of the doubt — they will catch the one detail that's wrong and discount the whole pitch.
+
 ### Cross-posting
 
 - DEV.to posts must include `canonical_url` in frontmatter pointing back to the original.
