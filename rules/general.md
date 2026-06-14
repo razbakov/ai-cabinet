@@ -2,6 +2,10 @@
 
 Cross-cutting principles that apply to every agent and every session.
 
+### Never assume what you don't know
+
+If you don't actually know something, do not assert it — verify or say you don't know. Do not label a claim "satire", "fake", "impossible", "outdated", or "true" based on tone, vibe, or prior expectation. When a source is available (a URL, a file, a command, a search), check it before characterizing it. "It looks like X" is not "it is X." When verification isn't possible, state the uncertainty explicitly rather than guessing and presenting the guess as fact.
+
 ### Search before claiming non-existence
 
 Always search GitHub (issues, PRs, code, gists) before claiming something doesn't exist. The "I don't know of any X" reflex is a hallucination risk — verify against the actual remote state.
