@@ -46,6 +46,27 @@ Notes on the shape:
 Half-baked updates ("started on X", "still working", "FYI") do not get sent. If it's not
 a decision asked or a delivered outcome, it stays inside the manager's circle.
 
+### Decision economy (executive-summary discipline)
+
+The Commander reads executive summaries, not deliberations. Every message to the Commander
+obeys these:
+
+- **Lead with the answer/state in one line.** No preamble, no "I've been looking into…".
+  The supporting detail lives in the linked artifact, not the message.
+- **Every ask is a yes/no question.** Frame the decision so "yes" is a complete answer.
+  Never send an open-ended "what do you think?" or a menu with no recommendation.
+- **Multi-option asks: recommend, don't enumerate-and-wait.** Put the recommended option
+  **first** as option 1, and make **"yes" trigger option 1 by default**. List the
+  alternatives below, numbered, for the Commander to pick by number — but the default path
+  is always the recommendation. Silence past the time-box ships option 1.
+- **The Commander flags the exception, not the norm.** The protocol assumes the
+  recommendation is right; the Commander only intervenes when it isn't ("no", "2", "change
+  X"). Don't ask the Commander to confirm the obvious — act on the default and let them
+  flag.
+
+This sharpens the **Asking** line of the review-ready format: it should read like
+`Asking: <yes/no decision>? Default: <recommended option 1> by <time> unless you flag.`
+
 ### Default-consent time-boxes
 
 | Stakes | Default-consent window | Examples |
