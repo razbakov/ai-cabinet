@@ -16,7 +16,12 @@ useHead({
     <LandingBuiltInSystem />
     <LandingMethodologies />
     <LandingAgentGrid />
+    <LandingLifeWheel />
+    <LandingSetupQuiz />
     <LandingHowItWorks />
+    <LandingAgentTestimonials />
+    <LandingSocialProof />
+    <LandingFrameworkDocs />
     <LandingFounderStory />
     <LandingCtaSection />
   </div>

@@ -6,17 +6,17 @@ const personalJourneyKeys = ['reflect', 'findDirection', 'setStrategy', 'buildRh
 const personalMeta = [
   { step: '01', agent: 'Sage', icon: 'lucide:heart-pulse', color: 'text-[var(--color-sage)]' },
   { step: '02', agent: 'Sage', icon: 'lucide:compass', color: 'text-[var(--color-sage)]' },
-  { step: '03', agent: 'Marco', icon: 'lucide:target', color: 'text-[var(--color-marco)]' },
+  { step: '03', agent: 'North', icon: 'lucide:target', color: 'text-[var(--color-north)]' },
   { step: '04', agent: 'Maya', icon: 'lucide:inbox', color: 'text-[var(--color-maya)]' },
   { step: '05', agent: 'The Team', icon: 'lucide:users', color: 'text-primary' },
 ]
 
 const workJourneyKeys = ['install', 'configure', 'onboard', 'workflows', 'scale'] as const
 const workMeta = [
-  { step: '01', agent: 'Admin', icon: 'lucide:download', color: 'text-[var(--color-viktor)]' },
-  { step: '02', agent: 'Admin', icon: 'lucide:settings', color: 'text-[var(--color-marco)]' },
+  { step: '01', agent: 'Admin', icon: 'lucide:download', color: 'text-[var(--color-forge)]' },
+  { step: '02', agent: 'Admin', icon: 'lucide:settings', color: 'text-[var(--color-north)]' },
   { step: '03', agent: 'Maya', icon: 'lucide:user-plus', color: 'text-[var(--color-maya)]' },
-  { step: '04', agent: 'The Team', icon: 'lucide:workflow', color: 'text-[var(--color-kai)]' },
+  { step: '04', agent: 'The Team', icon: 'lucide:workflow', color: 'text-[var(--color-bridge)]' },
   { step: '05', agent: 'The Team', icon: 'lucide:trending-up', color: 'text-primary' },
 ]
 

@@ -9,20 +9,22 @@ const props = defineProps<{
 
 const colorMap: Record<string, string> = {
   maya: 'border-t-[var(--color-maya)] bg-[var(--color-maya)]/5',
-  viktor: 'border-t-[var(--color-viktor)] bg-[var(--color-viktor)]/5',
-  luna: 'border-t-[var(--color-luna)] bg-[var(--color-luna)]/5',
-  marco: 'border-t-[var(--color-marco)] bg-[var(--color-marco)]/5',
+  forge: 'border-t-[var(--color-forge)] bg-[var(--color-forge)]/5',
+  torch: 'border-t-[var(--color-torch)] bg-[var(--color-torch)]/5',
+  north: 'border-t-[var(--color-north)] bg-[var(--color-north)]/5',
   sage: 'border-t-[var(--color-sage)] bg-[var(--color-sage)]/5',
-  kai: 'border-t-[var(--color-kai)] bg-[var(--color-kai)]/5',
+  bridge: 'border-t-[var(--color-bridge)] bg-[var(--color-bridge)]/5',
+  oracle: 'border-t-[var(--color-oracle)] bg-[var(--color-oracle)]/5',
 }
 
 const ringColorMap: Record<string, string> = {
   maya: 'ring-[var(--color-maya)]',
-  viktor: 'ring-[var(--color-viktor)]',
-  luna: 'ring-[var(--color-luna)]',
-  marco: 'ring-[var(--color-marco)]',
+  forge: 'ring-[var(--color-forge)]',
+  torch: 'ring-[var(--color-torch)]',
+  north: 'ring-[var(--color-north)]',
   sage: 'ring-[var(--color-sage)]',
-  kai: 'ring-[var(--color-kai)]',
+  bridge: 'ring-[var(--color-bridge)]',
+  oracle: 'ring-[var(--color-oracle)]',
 }
 
 const responsibilities = computed(() => {

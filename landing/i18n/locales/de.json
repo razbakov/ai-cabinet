@@ -8,7 +8,7 @@
     "guide": "Anleitung",
     "skills": "Fahigkeiten",
     "getStarted": "Loslegen",
-    "documentation": "Dokumentation"
+    "documentation": "Docs"
   },
   "hero": {
     "personal": {
@@ -25,7 +25,7 @@
     "step2": "2. Fuge diesen Prompt ein",
     "copied": "Kopiert",
     "copyPrompt": "Prompt kopieren",
-    "heroAlt": "Triff das Ikigai Team — Maya, Viktor, Luna, Alex, Marco, Sage und Kai"
+    "heroAlt": "Triff das Ikigai Team — Maya, Forge, Torch, Alex, North, Sage und Bridge"
   },
   "banners": {
     "lbd": {
@@ -68,7 +68,7 @@
       },
       "execute": {
         "name": "Umsetzen",
-        "description": "Viktor baut. Luna erstellt Inhalte. Kai kummert sich um die Community. Sage checkt ein. Maya halt alles am Laufen. Du konzentrierst dich auf dein Ikigai.",
+        "description": "Forge baut. Torch erstellt Inhalte. Bridge kummert sich um die Community. Sage checkt ein. Maya halt alles am Laufen. Du konzentrierst dich auf dein Ikigai.",
         "methodology": "S3 Governance"
       }
     },
@@ -118,7 +118,7 @@
       },
       "okrs": {
         "name": "OKRs",
-        "description": "Quartalsziele kaskadieren zu jedem Agenten. Marco verfolgt den Fortschritt und hinterfragt alles, was nichts bewegt."
+        "description": "Quartalsziele kaskadieren zu jedem Agenten. North verfolgt den Fortschritt und hinterfragt alles, was nichts bewegt."
       },
       "gtd": {
         "name": "GTD",
@@ -130,7 +130,7 @@
       },
       "crm": {
         "name": "CRM",
-        "description": "Triff jemanden, sende einen Screenshot. Kai recherchiert, bereichert das Profil und verfolgt Follow-ups."
+        "description": "Triff jemanden, sende einen Screenshot. Bridge recherchiert, bereichert das Profil und verfolgt Follow-ups."
       },
       "scrum": {
         "name": "Scrum",
@@ -152,7 +152,7 @@
   },
   "agents": {
     "title": "Triff dein Team",
-    "subtitle": "Sechs spezialisierte Agenten, jeder mit eigener Expertise und Personlichkeit. Wahle die, die du brauchst.",
+    "subtitle": "Sieben spezialisierte Agenten, jeder mit eigener Expertise und Personlichkeit. Wahle die, die du brauchst.",
     "maya": {
       "role": "Stabschefin",
       "description": "Maya halt alles am Laufen. Sie besitzt deinen taglichen Rhythmus, verwaltet dein Postfach, koordiniert zwischen Agenten und stellt sicher, dass nichts durchfallt.",
@@ -162,27 +162,27 @@
         "Agentenubergreifende Aufgabendelegation und Nachverfolgung"
       ]
     },
-    "viktor": {
+    "forge": {
       "role": "CTO",
-      "description": "Viktor kummert sich um die technische Seite. Er entwirft Losungen, schreibt Code, verwaltet Deployments und halt deinen Tech-Stack gesund.",
+      "description": "Forge kummert sich um die technische Seite. Er entwirft Losungen, schreibt Code, verwaltet Deployments und halt deinen Tech-Stack gesund.",
       "responsibilities": [
         "Architekturentscheidungen und Code-Reviews",
         "CI/CD-Pipeline und Deployment-Management",
         "Technische Schulden Tracking und Losung"
       ]
     },
-    "luna": {
+    "torch": {
       "role": "Leiterin Content & Wachstum",
-      "description": "Luna verwandelt deine Ideen in Inhalte, die Menschen erreichen. Sie schreibt Blogbeitrage, verwaltet Social Media, optimiert fur SEO und baut deine offentliche Prasenz auf.",
+      "description": "Torch verwandelt deine Ideen in Inhalte, die Menschen erreichen. Sie schreibt Blogbeitrage, verwaltet Social Media, optimiert fur SEO und baut deine offentliche Prasenz auf.",
       "responsibilities": [
         "Blogbeitrage, Newsletter und Social Media",
         "SEO-Optimierung und Content-Kalender",
         "Markenstimme und Messaging-Konsistenz"
       ]
     },
-    "marco": {
+    "north": {
       "role": "Leiter Strategie & Business",
-      "description": "Marco stellt sicher, dass du die richtigen Dinge baust. Er definiert OKRs, bewertet Geschaftsmodelle, verfolgt Metriken und halt dein Portfolio fokussiert.",
+      "description": "North stellt sicher, dass du die richtigen Dinge baust. Er definiert OKRs, bewertet Geschaftsmodelle, verfolgt Metriken und halt dein Portfolio fokussiert.",
       "responsibilities": [
         "OKR-Setzung und Quartalsplanung",
         "Geschaftsmodell-Validierung und Preisgestaltung",
@@ -198,13 +198,22 @@
         "Gesundheitsgewohnheiten und Routinen-Coaching"
       ]
     },
-    "kai": {
+    "bridge": {
       "role": "Community & Partnerschaften",
-      "description": "Kai baut dein Netzwerk auf und pflegt deine Community. Er verwaltet Kontakte, folgt nach Events nach und offnet Turen zu Partnerschaften.",
+      "description": "Bridge baut dein Netzwerk auf und pflegt deine Community. Er verwaltet Kontakte, folgt nach Events nach und offnet Turen zu Partnerschaften.",
       "responsibilities": [
         "Kontaktmanagement und Nachverfolgung",
         "Community-Engagement und Events",
         "Partnerschafts-Outreach und Beziehungspflege"
+      ]
+    },
+    "oracle": {
+      "role": "Symbolische & mythopoetische Beratung",
+      "description": "Oracle liest das tiefere Muster. Sie arbeitet mit Symbol, Mythos und Metapher — bringt Bedeutung unter den Metriken hervor, benennt die Geschichte, die du lebst, und pflegt Geist und Wachstum des Ganzen.",
+      "responsibilities": [
+        "Symbolische und mythopoetische Reflexion",
+        "Stewardship der Lebensbereiche Geist und Wachstum",
+        "Muster und Bedeutung hinter den Daten benennen"
       ]
     }
   },
@@ -220,7 +229,7 @@
         },
         "buildStrategy": {
           "title": "Baue deine Strategie",
-          "description": "Marco hilft, deine Vision in OKRs zu verwandeln. Maya baut den taglichen Rhythmus auf. Das Team formiert sich um deine Ziele."
+          "description": "North hilft, deine Vision in OKRs zu verwandeln. Maya baut den taglichen Rhythmus auf. Das Team formiert sich um deine Ziele."
         },
         "focusOnIkigai": {
           "title": "Konzentriere dich auf dein Ikigai",
@@ -253,7 +262,7 @@
       "p1": "Du bist ein Einzelgrunder, der alle Hute tragt. CEO am Montag, Entwickler am Dienstag, Content-Autor am Mittwoch, Support am Donnerstag, und am Freitag bist du zu erschopft, um uber Strategie nachzudenken.",
       "p2": "Du hast von OKRs, GTD, Level 10 Life, Soziokratie gehort. Du weisst, dass sie funktionieren. Aber wer hat die Zeit, das alles zu lernen, einzurichten und tatsachlich durchzuhalten?",
       "p3": "Was wenn jemand sich mit dir hinsetzt, dir hilft herauszufinden was wichtig ist, es in einen Plan verwandelt und dann die Umsetzung ubernimmt? Kein Kurs zum Anschauen. Keine Vorlage zum Ausfullen. Ein Team, das dich dort abholt wo du bist.",
-      "p4": "Das ist Ikigai Team. Es beginnt mit einem Gesprach, nicht mit einer Konfiguration. Sage hilft dir deine Richtung zu finden. Marco verwandelt es in Strategie. Maya setzt es jeden Tag um. Du konzentrierst dich auf dein Ikigai."
+      "p4": "Das ist Ikigai Team. Es beginnt mit einem Gesprach, nicht mit einer Konfiguration. Sage hilft dir deine Richtung zu finden. North verwandelt es in Strategie. Maya setzt es jeden Tag um. Du konzentrierst dich auf dein Ikigai."
     },
     "work": {
       "title": "Klingt nach deiner Firma?",
@@ -281,5 +290,158 @@
   "path": {
     "personal": "Persoenlich",
     "work": "Arbeit"
+  },
+  "lifeWheel": {
+    "title": "Das 12-Bereiche-Lebensrad",
+    "subtitle": "Dein Leben ist mehr als deine Arbeit. Das Team bewertet alle 12 Bereiche von 1–10, bewertet monatlich neu und ordnet jeden einem von sechs Stewards zu.",
+    "scoreLabel": "Bewertung 1–10",
+    "rescore": "Monatlich neu bewertet",
+    "stewards": "6 Stewards + Oracle",
+    "stewardsNote": "Jede Speiche hat einen Owner. Maya hutet das Rad; Oracle pflegt Geist und Wachstum.",
+    "domains": {
+      "spirit": "Geist",
+      "body": "Korper",
+      "mind": "Verstand",
+      "family": "Familie",
+      "friends": "Freunde",
+      "community": "Gemeinschaft",
+      "business": "Business",
+      "work": "Arbeit",
+      "money": "Geld",
+      "growth": "Wachstum",
+      "environment": "Umfeld",
+      "play": "Spiel"
+    }
+  },
+  "setupQuiz": {
+    "title": "Wo solltest du starten?",
+    "subtitle": "Drei Fragen. Wir zeigen dir das richtige erste Gesprach.",
+    "start": "30-Sekunden-Setup starten",
+    "next": "Weiter",
+    "back": "Zuruck",
+    "restart": "Neu starten",
+    "progress": "Frage {current} von {total}",
+    "questions": {
+      "q1": {
+        "prompt": "Was schmerzt gerade am meisten?",
+        "options": {
+          "scattered": "Ich verzettele mich uber zu viele Projekte",
+          "invisible": "Ich baue Dinge, aber niemand sieht sie",
+          "empty": "Auf dem Papier erfolgreich, innen leer",
+          "chaos": "Meine Tage sind reaktives Chaos"
+        }
+      },
+      "q2": {
+        "prompt": "Wovon willst du mehr?",
+        "options": {
+          "focus": "Fokus und klare Prioritaten",
+          "audience": "Publikum und Reichweite",
+          "meaning": "Sinn und Richtung",
+          "rhythm": "Einen verlasslichen Tagesrhythmus"
+        }
+      },
+      "q3": {
+        "prompt": "Wenn diese Woche eine Sache erledigt ware, dann…",
+        "options": {
+          "strategy": "Eine echte Strategie und OKRs",
+          "content": "Content, der konstant rausgeht",
+          "wellbeing": "Bei mir selbst nachfassen",
+          "ops": "Postfach und Kalender im Griff"
+        }
+      }
+    },
+    "result": {
+      "title": "Starte mit {agent}",
+      "cta": "{agent}s Coaching-Notebook offnen",
+      "sageNote": "Jede Ikigai-Team-Reise beginnt mit einem Gesprach, nicht mit einer Konfiguration. Sage ubernimmt ab hier.",
+      "agents": {
+        "sage": "Du tragst Gewicht, das kein OKR hebt. Beginne mit Sage — eine Level-10-Life-Bewertung und ein echtes Gesprach uber Richtung.",
+        "north": "Du hast Energie, aber kein Ziel. Beginne mit North, um die Vision in OKRs und ein fokussiertes Portfolio zu verwandeln.",
+        "torch": "Du baust im Dunkeln. Beginne mit Torch, um Content rauszubringen und deine Prasenz aufzubauen.",
+        "maya": "Deine Tage steuern dich. Beginne mit Maya, um einen Tagesrhythmus zu installieren und das Postfach zu zahmen."
+      }
+    }
+  },
+  "socialProof": {
+    "title": "Lauft auf einem echten Portfolio",
+    "subtitle": "Das ist keine Demo. Das Ikigai Team fuhrt taglich Alex Razbakovs Portfolio aus Produkten und Communities.",
+    "disclaimer": "Kennzahlen sind illustrative Platzhalter, wo Live-Zahlen nicht offentlich sind. Richtungsweisend, nicht gepruft.",
+    "projects": {
+      "wedance": {
+        "name": "WeDance",
+        "desc": "Tanz-Community-Plattform",
+        "metric": "~25 DAU-Basis",
+        "tag": "Produkt"
+      },
+      "razbakov": {
+        "name": "razbakov.com",
+        "desc": "Personliche Seite & Blog",
+        "metric": "~1,6k → 5k Views/Mt Ziel",
+        "tag": "Content"
+      },
+      "mystery": {
+        "name": "MysteryGames",
+        "desc": "Social-Deduction-Events",
+        "metric": "20+ zahlende Gaste / Quartal",
+        "tag": "Events"
+      },
+      "montuno": {
+        "name": "Montuno Club",
+        "desc": "Salsa-Mitgliedschaft",
+        "metric": "Erstes zahlendes Mitglied",
+        "tag": "Community"
+      },
+      "15x4": {
+        "name": "15x4 Munchen",
+        "desc": "Wissenschafts-Talkabende",
+        "metric": "30+ Gaste / Event",
+        "tag": "Events"
+      },
+      "sdtv": {
+        "name": "Social Dance TV",
+        "desc": "Tanz-Medien",
+        "metric": "Homepage live, 10 DAU Ziel",
+        "tag": "Medien"
+      }
+    }
+  },
+  "frameworkDocs": {
+    "title": "Open-Source-Framework, dein eigenes Team",
+    "subtitle": "Ikigai Team ist ein Wiki aus Governance-Regeln, Agenten-Personas und Betriebsmustern — importiert, nicht kopiert. Forke es, lies jede Regel und forme ein Team, das dir gehort.",
+    "rulesCta": "Regeln-Wiki lesen",
+    "guideCta": "Guide durchstobern",
+    "points": {
+      "open": {
+        "title": "Open Source",
+        "desc": "Jede Regel liegt offen. Keine Blackbox, kein Lock-in — lies und prufe das ganze System."
+      },
+      "custom": {
+        "title": "Dein eigenes Team",
+        "desc": "Agenten umbenennen, Skills tauschen, Bereiche hinzufugen. Das Framework ist der Boden, nicht die Decke."
+      },
+      "import": {
+        "title": "Importieren, nicht kopieren",
+        "desc": "Eine Importzeile erbt das ganze Framework. Updates kommen via git pull, nicht via Migrationen."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Was das Team dieses Quartal geliefert hat",
+    "subtitle": "In ihren eigenen Worten — drei Agenten daruber, was sich bewegte.",
+    "quarterLabel": "Dieses Quartal",
+    "items": {
+      "forge": {
+        "quote": "Butlers Dispatch-to-Agent-Pipeline ausgeliefert und die Tracking-Health des Portfolios auf null defekte SDKs gebracht. Die Autopilot-Infrastruktur ist jetzt real — Code bewegt sich, ohne dass jemand das Terminal beobachtet.",
+        "metric": "0 defekte SDKs · Dispatch live"
+      },
+      "north": {
+        "quote": "Die OKRs in drei verantwortliche Ebenen umstrukturiert und das Realismus-Audit zur Quartalsmitte durchgefuhrt. Jedes KR rollt jetzt bis Samstag hoch — Strategie ist kein Bauchgefuhl mehr.",
+        "metric": "3-Ebenen-OKRs · wochentliche Rollups"
+      },
+      "bridge": {
+        "quote": "Den Kontakt-Backlog auf ein 48h-SLA gebracht und die ersten Partnerschaften aktiviert. Events bekommen jetzt Follow-ups, bevor der Raum kalt wird.",
+        "metric": "48h Kontakt-SLA · Partnerschaften live"
+      }
+    }
   }
 }

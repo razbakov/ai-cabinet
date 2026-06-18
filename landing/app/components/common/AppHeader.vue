@@ -2,6 +2,8 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 const mobileMenuOpen = ref(false)
+
+const rulesUrl = 'https://github.com/razbakov/ikigai-team/tree/main/rules'
 </script>
 
 <template>
@@ -41,6 +43,15 @@ const mobileMenuOpen = ref(false)
           >
             {{ t('nav.skills') }}
           </NuxtLink>
+          <a
+            :href="rulesUrl"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {{ t('nav.documentation') }}
+            <Icon name="lucide:external-link" class="w-3.5 h-3.5" />
+          </a>
           <CommonLanguagePicker />
           <CommonThemeToggle />
           <NuxtLink
@@ -82,6 +93,16 @@ const mobileMenuOpen = ref(false)
         >
           {{ t('nav.skills') }}
         </NuxtLink>
+        <a
+          :href="rulesUrl"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center gap-1 px-3 py-2 text-sm hover:bg-muted rounded-md"
+          @click="mobileMenuOpen = false"
+        >
+          {{ t('nav.documentation') }}
+          <Icon name="lucide:external-link" class="w-3.5 h-3.5" />
+        </a>
         <div class="flex items-center gap-3 px-3 py-2">
           <CommonLanguagePicker />
           <CommonThemeToggle />
