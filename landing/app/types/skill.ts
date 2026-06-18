@@ -46,7 +46,7 @@ export const SKILLS: SkillEntry[] = [
     tags: ['meetings', 'preparation'],
     complexity: 'simple',
   },
-  // Engineering (Viktor)
+  // Engineering (Forge)
   {
     slug: 'code-review',
     name: 'Code Review',
@@ -83,7 +83,7 @@ export const SKILLS: SkillEntry[] = [
     tags: ['bugs', 'debugging', 'issues'],
     complexity: 'moderate',
   },
-  // Content (Luna)
+  // Content (Torch)
   {
     slug: 'blog-post',
     name: 'Blog Post',
@@ -120,7 +120,7 @@ export const SKILLS: SkillEntry[] = [
     tags: ['planning', 'content', 'calendar'],
     complexity: 'moderate',
   },
-  // Strategy (Marco)
+  // Strategy (North)
   {
     slug: 'okr-review',
     name: 'OKR Review',
@@ -194,7 +194,7 @@ export const SKILLS: SkillEntry[] = [
     tags: ['assessment', 'life-design', 'quarterly'],
     complexity: 'moderate',
   },
-  // Community (Kai)
+  // Community (Bridge)
   {
     slug: 'contact-enrichment',
     name: 'Contact Enrichment',

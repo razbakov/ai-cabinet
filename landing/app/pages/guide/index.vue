@@ -19,7 +19,7 @@ const sections = [
   },
   {
     title: 'Meet the Team',
-    description: 'Get to know Maya, Viktor, Luna, Marco, Sage, and Kai.',
+    description: 'Get to know Maya, Forge, Torch, North, Sage, Bridge, and Oracle.',
     icon: 'lucide:users',
     to: '/guide/agents',
   },
