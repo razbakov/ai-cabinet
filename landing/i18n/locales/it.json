@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Ikigai Team — Il tuo team IA dei sogni",
-    "description": "6 agenti IA con GTD, OKR, Level 10 Life e governance S3 integrati. Un sistema completo per fondatori solitari — non solo agenti, un modo di lavorare."
+    "description": "6 agenti IA con GTD, OKR, la Ruota della Vita dei 12 Apostoli e governance S3 integrati. Un sistema completo per fondatori solitari — non solo agenti, un modo di lavorare."
   },
   "nav": {
     "home": "Home",
@@ -48,8 +48,8 @@
     "personalSteps": {
       "reflect": {
         "name": "Riflettere",
-        "description": "Inizia da te stesso. Valutazione Level 10 Life — valuta onestamente 10 aree della tua vita. Dove sei adesso?",
-        "methodology": "Level 10 Life"
+        "description": "Inizia da te stesso. Ruota della Vita dei 12 Apostoli — valuta onestamente 12 virtu degli apostoli da 1 a 10. Dove sei adesso?",
+        "methodology": "Ruota della Vita dei 12 Apostoli"
       },
       "findDirection": {
         "name": "Trovare la direzione",
@@ -108,9 +108,9 @@
         "name": "Ikigai",
         "description": "Trova il tuo scopo. Delega tutto il resto. Il team esiste perche tu possa concentrarti su cio che solo tu puoi fare."
       },
-      "level10life": {
-        "name": "Level 10 Life",
-        "description": "Valuta 10 aree di vita, monitora i trend, individua il burnout prima che colpisca. Sage fa valutazioni regolarmente."
+      "twelveApostles": {
+        "name": "Ruota della Vita dei 12 Apostoli",
+        "description": "Valuta 12 virtu degli apostoli da 1 a 10, monitora i trend nel tempo, evidenzia ogni settimana il raggio piu debole. Esegui regolarmente come autovalutazione guidata."
       },
       "grow": {
         "name": "GROW",
@@ -260,7 +260,7 @@
     "personal": {
       "title": "Ti suona familiare?",
       "p1": "Sei un fondatore solitario che indossa tutti i cappelli. CEO il lunedi, sviluppatore il martedi, redattore il mercoledi, supporto il giovedi, e il venerdi sei troppo esausto per pensare alla strategia.",
-      "p2": "Hai sentito parlare di OKR, GTD, Level 10 Life, Sociocrazia. Sai che funzionano. Ma chi ha il tempo di imparare tutto, configurarlo e davvero mantenerlo?",
+      "p2": "Hai sentito parlare di OKR, GTD, della Ruota della Vita dei 12 Apostoli, Sociocrazia. Sai che funzionano. Ma chi ha il tempo di imparare tutto, configurarlo e davvero mantenerlo?",
       "p3": "E se qualcuno si sedesse con te, ti aiutasse a capire cosa conta, lo trasformasse in un piano e poi gestisse l'esecuzione? Non un corso da guardare. Non un template da compilare. Un team che ti incontra dove sei.",
       "p4": "Questo e Ikigai Team. Inizia con una conversazione, non con una configurazione. Sage ti aiuta a trovare la direzione. North la trasforma in strategia. Maya la realizza ogni giorno. Tu ti concentri sul tuo ikigai."
     },
@@ -355,7 +355,7 @@
       "cta": "Open {agent}'s coaching notebook",
       "sageNote": "Every Ikigai Team journey begins with a conversation, not a configuration. Sage takes it from here.",
       "agents": {
-        "sage": "You are carrying weight that no OKR will lift. Begin with Sage — a Level 10 Life assessment and a real conversation about direction.",
+        "sage": "You are carrying weight that no OKR will lift. Begin with Sage — a 12 Apostles Life Wheel assessment and a real conversation about direction.",
         "north": "You have energy but no aim. Begin with North to turn the vision into OKRs and a focused portfolio.",
         "torch": "You are building in the dark. Begin with Torch to get content out and build your public presence.",
         "maya": "Your days run you. Begin with Maya to install a daily rhythm and tame the inbox."

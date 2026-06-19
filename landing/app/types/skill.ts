@@ -188,7 +188,7 @@ export const SKILLS: SkillEntry[] = [
   {
     slug: 'life-assessment',
     name: 'Life Assessment',
-    description: 'Run a Level 10 Life assessment: rate 10 life areas, compare to previous scores, identify focus areas.',
+    description: 'Run a 12 Apostles Life Wheel assessment: score 12 apostle-virtues 1–10, compare to previous scores, surface the weakest spoke.',
     category: 'personal',
     defaultAgent: 'sage',
     tags: ['assessment', 'life-design', 'quarterly'],

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Ikigai Team — Votre equipe IA de reve",
-    "description": "6 agents IA avec GTD, OKRs, Level 10 Life et gouvernance S3 integres. Un systeme complet pour les fondateurs solo — pas seulement des agents, une facon de travailler."
+    "description": "6 agents IA avec GTD, OKRs, la Roue de Vie des 12 Apotres et gouvernance S3 integres. Un systeme complet pour les fondateurs solo — pas seulement des agents, une facon de travailler."
   },
   "nav": {
     "home": "Accueil",
@@ -48,8 +48,8 @@
     "personalSteps": {
       "reflect": {
         "name": "Reflechir",
-        "description": "Commencez par vous-meme. Evaluation Level 10 Life — notez 10 domaines de votre vie honnetement. Ou en etes-vous ?",
-        "methodology": "Level 10 Life"
+        "description": "Commencez par vous-meme. Roue de Vie des 12 Apotres — notez 12 vertus des apotres de 1 a 10 honnetement. Ou en etes-vous ?",
+        "methodology": "Roue de Vie des 12 Apotres"
       },
       "findDirection": {
         "name": "Trouver la direction",
@@ -108,9 +108,9 @@
         "name": "Ikigai",
         "description": "Trouvez votre raison d'etre. Deleguez tout le reste. L'equipe existe pour que vous puissiez vous concentrer sur ce que vous seul pouvez faire."
       },
-      "level10life": {
-        "name": "Level 10 Life",
-        "description": "Notez 10 domaines de vie, suivez les tendances, detectez le burnout avant qu'il ne frappe. Sage fait des evaluations regulierement."
+      "twelveApostles": {
+        "name": "Roue de Vie des 12 Apotres",
+        "description": "Notez 12 vertus des apotres de 1 a 10, suivez les tendances dans le temps, mettez en avant le rayon le plus faible chaque semaine. A faire regulierement comme une auto-evaluation guidee."
       },
       "grow": {
         "name": "GROW",
@@ -260,7 +260,7 @@
     "personal": {
       "title": "Ca vous dit quelque chose ?",
       "p1": "Vous etes un fondateur solo qui porte toutes les casquettes. CEO le lundi, developpeur le mardi, redacteur le mercredi, support le jeudi, et le vendredi vous etes trop epuise pour penser a la strategie.",
-      "p2": "Vous avez entendu parler des OKRs, GTD, Level 10 Life, Sociocratie. Vous savez que ca marche. Mais qui a le temps d'apprendre tout ca, de le mettre en place et de s'y tenir ?",
+      "p2": "Vous avez entendu parler des OKRs, GTD, de la Roue de Vie des 12 Apotres, Sociocratie. Vous savez que ca marche. Mais qui a le temps d'apprendre tout ca, de le mettre en place et de s'y tenir ?",
       "p3": "Et si quelqu'un s'asseyait avec vous, vous aidait a comprendre ce qui compte, le transformait en plan et prenait en charge l'execution ? Pas un cours a regarder. Pas un modele a remplir. Une equipe qui vous rejoint la ou vous en etes.",
       "p4": "C'est Ikigai Team. Ca commence par une conversation, pas une configuration. Sage vous aide a trouver votre direction. North la transforme en strategie. Maya la met en oeuvre chaque jour. Vous vous concentrez sur votre ikigai."
     },
@@ -355,7 +355,7 @@
       "cta": "Open {agent}'s coaching notebook",
       "sageNote": "Every Ikigai Team journey begins with a conversation, not a configuration. Sage takes it from here.",
       "agents": {
-        "sage": "You are carrying weight that no OKR will lift. Begin with Sage — a Level 10 Life assessment and a real conversation about direction.",
+        "sage": "You are carrying weight that no OKR will lift. Begin with Sage — a 12 Apostles Life Wheel assessment and a real conversation about direction.",
         "north": "You have energy but no aim. Begin with North to turn the vision into OKRs and a focused portfolio.",
         "torch": "You are building in the dark. Begin with Torch to get content out and build your public presence.",
         "maya": "Your days run you. Begin with Maya to install a daily rhythm and tame the inbox."
