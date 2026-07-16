@@ -57,11 +57,34 @@ a decision asked or a delivered outcome, it stays inside the manager's circle.
 Strategic items never auto-ship. The manager may propose and recommend, but the Commander
 must explicitly approve.
 
+### Silence is not consent for consequential or listed items
+
+Default-consent (silence → ship) is a convenience for **single, reversible, low-stakes**
+asks. It is **void** in two cases, because in both the Commander's silence cannot be read as
+agreement:
+
+1. **Consequential items** — anything involving money, an outbound message, a published or
+   irreversible change, a standing rule, or account/permission changes. These require an
+   **explicit approval**. Silence means *not done* — the item parks and waits, it never executes.
+2. **Listed items** — whenever two or more decisions share one message. A single reply
+   channel cannot disambiguate which item it answers, so silence (or even one "ok") must not
+   be spread across the list. Each item needs its **own unambiguous answer**.
+
+The reliable mechanism for both is a **per-item explicit control** — e.g. Telegram inline
+buttons (`✓ / ✗ / ⏸`) where each tap carries that item's id, the message edits in place to
+confirm, and an untapped item stays **Pending** and re-surfaces. **The system acts only on an
+explicit tap; absence of a tap does nothing.** This inverts default-consent precisely where
+default-consent is dangerous.
+
+FYIs (no decision requested) don't need this — they're informational. Only decisions do.
+
 ### Working with the protocol
 
 - The Commander replies in natural language. "ok" / "ship it" / "yes" → approve now.
   "wait" / "hold" → pause the time-box. "no" / "change X" / "why this not Y?" → revise
-  and resend. Silence past the time-box → consent.
+  and resend. Silence past the time-box → consent **only for a single, reversible,
+  low-stakes item** — never for a consequential item or one presented in a list (see
+  "Silence is not consent for consequential or listed items" above).
 - Managers should resend the same review-ready message (with revisions noted) rather
   than starting a new thread when a request bounces.
 - If a decision needs cross-manager input (e.g., a Marco proposal that touches Viktor's
