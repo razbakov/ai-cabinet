@@ -355,7 +355,7 @@
       "cta": "Open {agent}'s coaching notebook",
       "sageNote": "Every Ikigai Team journey begins with a conversation, not a configuration. Sage takes it from here.",
       "agents": {
-        "sage": "You are carrying weight that no OKR will lift. Begin with Sage — a 12 Apostles Life Wheel assessment and a real conversation about direction.",
+        "sage": "Tu portes un poids qu'aucun OKR ne soulevera. Commence avec Sage — une evaluation de la Roue de Vie des 12 Apotres et une vraie conversation sur ta direction.",
         "north": "You have energy but no aim. Begin with North to turn the vision into OKRs and a focused portfolio.",
         "torch": "You are building in the dark. Begin with Torch to get content out and build your public presence.",
         "maya": "Your days run you. Begin with Maya to install a daily rhythm and tame the inbox."
