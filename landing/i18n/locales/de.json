@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Ikigai Team — Dein KI-Traumteam",
-    "description": "6 KI-Agenten mit integriertem GTD, OKRs, Level 10 Life und S3-Governance. Ein komplettes System fur Einzelgrunder — nicht nur Agenten, eine Arbeitsweise."
+    "description": "6 KI-Agenten mit integriertem GTD, OKRs, dem Lebensrad der 12 Apostel und S3-Governance. Ein komplettes System fur Einzelgrunder — nicht nur Agenten, eine Arbeitsweise."
   },
   "nav": {
     "home": "Startseite",
@@ -48,8 +48,8 @@
     "personalSteps": {
       "reflect": {
         "name": "Reflektieren",
-        "description": "Beginne bei dir selbst. Level 10 Life Assessment — bewerte 10 Lebensbereiche ehrlich. Wo stehst du gerade?",
-        "methodology": "Level 10 Life"
+        "description": "Beginne bei dir selbst. Lebensrad der 12 Apostel — bewerte 12 Apostel-Tugenden von 1-10 ehrlich. Wo stehst du gerade?",
+        "methodology": "Lebensrad der 12 Apostel"
       },
       "findDirection": {
         "name": "Richtung finden",
@@ -108,9 +108,9 @@
         "name": "Ikigai",
         "description": "Finde deinen Zweck. Delegiere alles andere. Das Team existiert, damit du dich auf das konzentrieren kannst, was nur du tun kannst."
       },
-      "level10life": {
-        "name": "Level 10 Life",
-        "description": "Bewerte 10 Lebensbereiche, verfolge Trends uber die Zeit, erkenne Burnout bevor es zuschlagt. Sage fuhrt regelmasig Assessments durch."
+      "twelveApostles": {
+        "name": "Lebensrad der 12 Apostel",
+        "description": "Bewerte 12 Apostel-Tugenden von 1-10, verfolge Trends uber die Zeit, hebe jede Woche die schwachste Speiche hervor. Regelmasig als gefuhrte Selbsteinschatzung durchfuhren."
       },
       "grow": {
         "name": "GROW",
@@ -260,7 +260,7 @@
     "personal": {
       "title": "Kommt dir das bekannt vor?",
       "p1": "Du bist ein Einzelgrunder, der alle Hute tragt. CEO am Montag, Entwickler am Dienstag, Content-Autor am Mittwoch, Support am Donnerstag, und am Freitag bist du zu erschopft, um uber Strategie nachzudenken.",
-      "p2": "Du hast von OKRs, GTD, Level 10 Life, Soziokratie gehort. Du weisst, dass sie funktionieren. Aber wer hat die Zeit, das alles zu lernen, einzurichten und tatsachlich durchzuhalten?",
+      "p2": "Du hast von OKRs, GTD, dem Lebensrad der 12 Apostel, Soziokratie gehort. Du weisst, dass sie funktionieren. Aber wer hat die Zeit, das alles zu lernen, einzurichten und tatsachlich durchzuhalten?",
       "p3": "Was wenn jemand sich mit dir hinsetzt, dir hilft herauszufinden was wichtig ist, es in einen Plan verwandelt und dann die Umsetzung ubernimmt? Kein Kurs zum Anschauen. Keine Vorlage zum Ausfullen. Ein Team, das dich dort abholt wo du bist.",
       "p4": "Das ist Ikigai Team. Es beginnt mit einem Gesprach, nicht mit einer Konfiguration. Sage hilft dir deine Richtung zu finden. North verwandelt es in Strategie. Maya setzt es jeden Tag um. Du konzentrierst dich auf dein Ikigai."
     },
@@ -355,7 +355,7 @@
       "cta": "{agent}s Coaching-Notebook offnen",
       "sageNote": "Jede Ikigai-Team-Reise beginnt mit einem Gesprach, nicht mit einer Konfiguration. Sage ubernimmt ab hier.",
       "agents": {
-        "sage": "Du tragst Gewicht, das kein OKR hebt. Beginne mit Sage — eine Level-10-Life-Bewertung und ein echtes Gesprach uber Richtung.",
+        "sage": "Du tragst Gewicht, das kein OKR hebt. Beginne mit Sage — eine Bewertung mit dem Lebensrad der 12 Apostel und ein echtes Gesprach uber Richtung.",
         "north": "Du hast Energie, aber kein Ziel. Beginne mit North, um die Vision in OKRs und ein fokussiertes Portfolio zu verwandeln.",
         "torch": "Du baust im Dunkeln. Beginne mit Torch, um Content rauszubringen und deine Prasenz aufzubauen.",
         "maya": "Deine Tage steuern dich. Beginne mit Maya, um einen Tagesrhythmus zu installieren und das Postfach zu zahmen."
